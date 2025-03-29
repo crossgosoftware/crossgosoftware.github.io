@@ -26,7 +26,7 @@ var __filename = fileURLToPath(import.meta.url);
 var __dirname = dirname(__filename);
 var vite_config_default = defineConfig({
   base: "/crossgosoftware.github.io/",
-  // GitHub Pages base URL
+  // Your GitHub repo name
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -36,23 +36,22 @@ var vite_config_default = defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "client", "src"),
-      // Resolves to /client/src
       "@shared": path.resolve(__dirname, "shared"),
-      // Shared folder
       "@assets": path.resolve(__dirname, "attached_assets")
-      // Custom assets
     }
   },
   root: path.resolve(__dirname, "client"),
-  // Sets /client as the root
+  // ✅ Root set to /client
   build: {
-    outDir: "dist",
-    // Moves /client/dist to root /dist
+    outDir: path.resolve(__dirname, "dist/public"),
+    // ✅ Output to /dist/public
+    assetsDir: "assets",
+    // ✅ Assets inside /public/assets
     emptyOutDir: true,
-    // Cleans /dist before build
+    // ✅ Clears folder on build
     rollupOptions: {
-      input: path.resolve(__dirname, "client/index.html")
-      // Ensures correct HTML
+      input: "/index.html"
+      // Ensure it generates HTML
     }
   }
 });
@@ -114,7 +113,7 @@ async function setupVite(app2, server) {
   });
 }
 function serveStatic(app2) {
-  const distPath = path2.resolve(__dirname2, "dist");
+  const distPath = path2.resolve(__dirname2, "dist/public");
   if (!fs.existsSync(distPath)) {
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`
