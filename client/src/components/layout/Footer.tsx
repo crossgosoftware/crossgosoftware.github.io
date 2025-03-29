@@ -63,7 +63,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <i className="fas fa-envelope mt-1 mr-3 text-neutral-400"></i>
-                <span className="text-neutral-400">info@crossgo.tech</span>
+                <span className="text-neutral-400">info@crossgosoftware.github.io</span>
               </li>
               <li className="flex items-start">
                 <i className="fas fa-phone-alt mt-1 mr-3 text-neutral-400"></i>
