@@ -28,6 +28,38 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+
+      - name: Reinstall esbuild (force correct binary)
+        run: |
+          npm install esbuild --platform=linux --force
+          chmod +x ./node_modules/.bin/esbuild
+
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Build project
+        run: |
+          npm run build
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+
       - name: Checkout
         uses: actions/checkout@v4
 
