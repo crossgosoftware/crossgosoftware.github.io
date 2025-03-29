@@ -31,7 +31,7 @@ export default defineConfig({
     assetsDir: "assets",                      // Keeps assets in /dist/assets
     emptyOutDir: true,                        // Cleans /dist before build
     rollupOptions: {
-      input: path.resolve(__dirname, "client", "index.html"), // Ensures correct HTML
+      input: "/index.html", // Ensures correct HTML
     },
   },
 });

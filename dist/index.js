@@ -53,7 +53,7 @@ var vite_config_default = defineConfig({
     emptyOutDir: true,
     // Cleans /dist before build
     rollupOptions: {
-      input: path.resolve(__dirname, "client", "index.html")
+      input: "/index.html"
       // Ensures correct HTML
     }
   }
