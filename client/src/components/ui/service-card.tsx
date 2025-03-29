@@ -17,11 +17,9 @@ const ServiceCard = ({ icon, title, description, link }: ServiceCardProps) => {
       <p className="text-neutral-600 mb-4">
         {description}
       </p>
-      <Link href={link}>
-        <a className="text-primary hover:text-primary-dark font-medium inline-flex items-center mt-auto">
-          Learn more
-          <i className="fas fa-arrow-right ml-2 text-sm"></i>
-        </a>
+      <Link href={link} className="text-primary hover:text-primary-dark font-medium inline-flex items-center mt-auto">
+        Learn more
+        <i className="fas fa-arrow-right ml-2 text-sm"></i>
       </Link>
     </div>
   );

@@ -85,11 +85,8 @@ const Header = () => {
           </nav>
           
           <div className="hidden md:block">
-            <Link href="/contact">
-              <Button 
-                className="bg-accent hover:bg-accent-dark text-white"
-                onClick={closeMobileMenu}
-              >
+            <Link href="/contact" onClick={closeMobileMenu}>
+              <Button className="bg-accent hover:bg-accent-dark text-white">
                 Get a Quote
               </Button>
             </Link>
