@@ -52,45 +52,35 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/">
-              <a 
-                className={`relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors ${location === '/' ? 'after:w-full' : ''}`}
-                onClick={(e) => handleNavLinkClick(e, 'home')}
-              >
-                Home
-              </a>
+            <Link href="/" 
+              className={`relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors ${location === '/' ? 'after:w-full' : ''}`}
+              onClick={(e) => handleNavLinkClick(e, 'home')}
+            >
+              Home
             </Link>
-            <Link href={location === '/' ? '#services' : '/services'}>
-              <a 
-                className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
-                onClick={(e) => handleNavLinkClick(e, 'services')}
-              >
-                Services
-              </a>
+            <Link href={location === '/' ? '#services' : '/services'} 
+              className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
+              onClick={(e) => handleNavLinkClick(e, 'services')}
+            >
+              Services
             </Link>
-            <Link href={location === '/' ? '#portfolio' : '/portfolio'}>
-              <a 
-                className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
-                onClick={(e) => handleNavLinkClick(e, 'portfolio')}
-              >
-                Portfolio
-              </a>
+            <Link href={location === '/' ? '#portfolio' : '/portfolio'} 
+              className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
+              onClick={(e) => handleNavLinkClick(e, 'portfolio')}
+            >
+              Portfolio
             </Link>
-            <Link href={location === '/' ? '#about' : '/about'}>
-              <a 
-                className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
-                onClick={(e) => handleNavLinkClick(e, 'about')}
-              >
-                About Us
-              </a>
+            <Link href={location === '/' ? '#about' : '/about'} 
+              className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
+              onClick={(e) => handleNavLinkClick(e, 'about')}
+            >
+              About Us
             </Link>
-            <Link href={location === '/' ? '#contact' : '/contact'}>
-              <a 
-                className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
-                onClick={(e) => handleNavLinkClick(e, 'contact')}
-              >
-                Contact
-              </a>
+            <Link href={location === '/' ? '#contact' : '/contact'} 
+              className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
+              onClick={(e) => handleNavLinkClick(e, 'contact')}
+            >
+              Contact
             </Link>
           </nav>
           
@@ -120,53 +110,41 @@ const Header = () => {
         {/* Mobile Navigation Menu */}
         <div className={`md:hidden pb-3 ${mobileMenuOpen ? 'block' : 'hidden'}`}>
           <div className="flex flex-col space-y-3 px-2 pt-2 pb-3">
-            <Link href="/">
-              <a 
-                className={`font-medium ${location === '/' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
-                onClick={closeMobileMenu}
-              >
-                Home
-              </a>
+            <Link href="/"
+              className={`font-medium ${location === '/' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
+              onClick={closeMobileMenu}
+            >
+              Home
             </Link>
-            <Link href="/services">
-              <a 
-                className={`font-medium ${location === '/services' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
-                onClick={closeMobileMenu}
-              >
-                Services
-              </a>
+            <Link href="/services"
+              className={`font-medium ${location === '/services' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
+              onClick={closeMobileMenu}
+            >
+              Services
             </Link>
-            <Link href="/portfolio">
-              <a 
-                className={`font-medium ${location === '/portfolio' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
-                onClick={closeMobileMenu}
-              >
-                Portfolio
-              </a>
+            <Link href="/portfolio"
+              className={`font-medium ${location === '/portfolio' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
+              onClick={closeMobileMenu}
+            >
+              Portfolio
             </Link>
-            <Link href="/about">
-              <a 
-                className={`font-medium ${location === '/about' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
-                onClick={closeMobileMenu}
-              >
-                About Us
-              </a>
+            <Link href="/about"
+              className={`font-medium ${location === '/about' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
+              onClick={closeMobileMenu}
+            >
+              About Us
             </Link>
-            <Link href="/contact">
-              <a 
-                className={`font-medium ${location === '/contact' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
-                onClick={closeMobileMenu}
-              >
-                Contact
-              </a>
+            <Link href="/contact"
+              className={`font-medium ${location === '/contact' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
+              onClick={closeMobileMenu}
+            >
+              Contact
             </Link>
-            <Link href="/contact">
-              <a 
-                className="bg-accent hover:bg-accent-dark text-white font-medium py-2 px-4 rounded-lg transition-colors text-center mt-2"
-                onClick={closeMobileMenu}
-              >
-                Get a Quote
-              </a>
+            <Link href="/contact"
+              className="bg-accent hover:bg-accent-dark text-white font-medium py-2 px-4 rounded-lg transition-colors text-center mt-2"
+              onClick={closeMobileMenu}
+            >
+              Get a Quote
             </Link>
           </div>
         </div>

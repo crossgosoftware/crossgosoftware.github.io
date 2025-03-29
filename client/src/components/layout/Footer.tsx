@@ -36,21 +36,21 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold font-inter mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              <li><Link href="/"><a className="text-neutral-400 hover:text-white transition-colors">Home</a></Link></li>
-              <li><Link href="/services"><a className="text-neutral-400 hover:text-white transition-colors">Services</a></Link></li>
-              <li><Link href="/portfolio"><a className="text-neutral-400 hover:text-white transition-colors">Portfolio</a></Link></li>
-              <li><Link href="/about"><a className="text-neutral-400 hover:text-white transition-colors">About Us</a></Link></li>
-              <li><Link href="/contact"><a className="text-neutral-400 hover:text-white transition-colors">Contact</a></Link></li>
+              <li><Link href="/" className="text-neutral-400 hover:text-white transition-colors">Home</Link></li>
+              <li><Link href="/services" className="text-neutral-400 hover:text-white transition-colors">Services</Link></li>
+              <li><Link href="/portfolio" className="text-neutral-400 hover:text-white transition-colors">Portfolio</Link></li>
+              <li><Link href="/about" className="text-neutral-400 hover:text-white transition-colors">About Us</Link></li>
+              <li><Link href="/contact" className="text-neutral-400 hover:text-white transition-colors">Contact</Link></li>
             </ul>
           </div>
           
           <div>
             <h3 className="text-lg font-semibold font-inter mb-6">Our Services</h3>
             <ul className="space-y-3">
-              <li><Link href="/services#custom-development"><a className="text-neutral-400 hover:text-white transition-colors">Custom Software Development</a></Link></li>
-              <li><Link href="/services#cross-platform"><a className="text-neutral-400 hover:text-white transition-colors">Cross-Platform Development</a></Link></li>
-              <li><Link href="/services#ai-integration"><a className="text-neutral-400 hover:text-white transition-colors">AI Integration</a></Link></li>
-              <li><Link href="/services#object-tracking"><a className="text-neutral-400 hover:text-white transition-colors">Object Tracking</a></Link></li>
+              <li><Link href="/services#custom-development" className="text-neutral-400 hover:text-white transition-colors">Custom Software Development</Link></li>
+              <li><Link href="/services#cross-platform" className="text-neutral-400 hover:text-white transition-colors">Cross-Platform Development</Link></li>
+              <li><Link href="/services#ai-integration" className="text-neutral-400 hover:text-white transition-colors">AI Integration</Link></li>
+              <li><Link href="/services#object-tracking" className="text-neutral-400 hover:text-white transition-colors">Object Tracking</Link></li>
             </ul>
           </div>
           
