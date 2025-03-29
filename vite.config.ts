@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
-  base: "/crossgosoftware.github.io/", // Your GitHub repo name
+  base: "/crossgosoftware.github.io/",  // <-- Add your repo name
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -25,13 +25,11 @@ export default defineConfig({
       "@assets": path.resolve(__dirname, "attached_assets"),
     },
   },
-  root: path.resolve(__dirname, "client"), // ✅ Root set to /client
+  root: path.resolve(__dirname, "client"),
   build: {
-    outDir: path.resolve(__dirname, "dist/public"), // ✅ Output to /dist/public
-    assetsDir: "assets",                           // ✅ Assets inside /public/assets
-    emptyOutDir: true,                             // ✅ Clears folder on build
+    outDir: "dist/public", // Explicitly sets the correct folder
     rollupOptions: {
-      input: "/index.html",                         // Ensure it generates HTML
+      input: "/index.html", // Make sure this is correct
     },
   },
 });

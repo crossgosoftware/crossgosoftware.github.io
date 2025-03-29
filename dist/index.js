@@ -26,7 +26,7 @@ var __filename = fileURLToPath(import.meta.url);
 var __dirname = dirname(__filename);
 var vite_config_default = defineConfig({
   base: "/crossgosoftware.github.io/",
-  // Your GitHub repo name
+  // <-- Add your repo name
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -41,17 +41,12 @@ var vite_config_default = defineConfig({
     }
   },
   root: path.resolve(__dirname, "client"),
-  // ✅ Root set to /client
   build: {
-    outDir: path.resolve(__dirname, "dist/public"),
-    // ✅ Output to /dist/public
-    assetsDir: "assets",
-    // ✅ Assets inside /public/assets
-    emptyOutDir: true,
-    // ✅ Clears folder on build
+    outDir: "dist/public",
+    // Explicitly sets the correct folder
     rollupOptions: {
       input: "/index.html"
-      // Ensure it generates HTML
+      // Make sure this is correct
     }
   }
 });
