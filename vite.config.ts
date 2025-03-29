@@ -27,7 +27,7 @@ export default defineConfig({
   },
   root: path.resolve(__dirname, "client"),
   build: {
-    outDir: "dist",
+    outDir: "dist/public", // Explicitly sets the correct folder
     rollupOptions: {
       input: "/index.html", // Make sure this is correct
     },

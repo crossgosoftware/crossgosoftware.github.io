@@ -37,10 +37,10 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload only the 'dist' folder
-          path: 'dist'
+          path: 'dist/public'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
           branch: gh-pages
-          folder: dist
+          folder: dist/public

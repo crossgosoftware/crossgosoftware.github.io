@@ -42,7 +42,8 @@ var vite_config_default = defineConfig({
   },
   root: path.resolve(__dirname, "client"),
   build: {
-    outDir: "dist",
+    outDir: "dist/public",
+    // Explicitly sets the correct folder
     rollupOptions: {
       input: "/index.html"
       // Make sure this is correct
@@ -107,7 +108,7 @@ async function setupVite(app2, server) {
   });
 }
 function serveStatic(app2) {
-  const distPath = path2.resolve(__dirname2, "public");
+  const distPath = path2.resolve(__dirname2, "dist/public");
   if (!fs.existsSync(distPath)) {
     throw new Error(
       `Could not find the build directory: ${distPath}, make sure to build the client first`
