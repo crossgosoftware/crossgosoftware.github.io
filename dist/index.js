@@ -25,15 +25,13 @@ import { fileURLToPath } from "url";
 var __filename = fileURLToPath(import.meta.url);
 var __dirname = dirname(__filename);
 var vite_config_default = defineConfig({
+  base: "/crossgosoftware.github.io/",
+  // <-- Add your repo name
   plugins: [
     react(),
     runtimeErrorOverlay(),
     themePlugin(),
-    ...process.env.NODE_ENV !== "production" && process.env.REPL_ID !== void 0 ? [
-      await import("@replit/vite-plugin-cartographer").then(
-        (m) => m.cartographer()
-      )
-    ] : []
+    ...process.env.NODE_ENV !== "production" && process.env.REPL_ID !== void 0 ? [await import("@replit/vite-plugin-cartographer").then((m) => m.cartographer())] : []
   ],
   resolve: {
     alias: {
@@ -44,10 +42,11 @@ var vite_config_default = defineConfig({
   },
   root: path.resolve(__dirname, "client"),
   build: {
-    outDir: "dist",
+    outDir: "dist/public",
+    // Explicitly sets the correct folder
     rollupOptions: {
       input: "/index.html"
-      // Ensure it generates HTML
+      // Make sure this is correct
     }
   }
 });
@@ -109,20 +108,17 @@ async function setupVite(app2, server) {
   });
 }
 function serveStatic(app2) {
-  const distPath = path2.resolve(__dirname2, "public");
+  const distPath = path2.resolve(__dirname2, "dist/public");
   if (!fs.existsSync(distPath)) {
-    throw new Error(`Could not find the build directory: ${distPath}`);
+    throw new Error(
+      `Could not find the build directory: ${distPath}, make sure to build the client first`
+    );
   }
-  
-  // Serve static files
   app2.use(express.static(distPath));
-
-  // Fallback to index.html (Single Page App)
-  app2.get('*', (_req, res) => {
+  app2.use("*", (_req, res) => {
     res.sendFile(path2.resolve(distPath, "index.html"));
   });
 }
-
 
 // server/index.ts
 var app = express2();
