@@ -28,7 +28,6 @@ export default defineConfig({
   root: path.resolve(__dirname, "client"),  // Sets /client as the root
   build: {
     outDir: path.resolve(__dirname, "dist"), // Moves /client/dist to root /dist
-    assetsDir: "assets",                      // Keeps assets in /dist/assets
     emptyOutDir: true,                        // Cleans /dist before build
     rollupOptions: {
       input: "/index.html", // Ensures correct HTML

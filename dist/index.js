@@ -48,8 +48,6 @@ var vite_config_default = defineConfig({
   build: {
     outDir: path.resolve(__dirname, "dist"),
     // Moves /client/dist to root /dist
-    assetsDir: "assets",
-    // Keeps assets in /dist/assets
     emptyOutDir: true,
     // Cleans /dist before build
     rollupOptions: {
