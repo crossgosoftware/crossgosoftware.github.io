@@ -13,25 +13,25 @@ const HomePage = () => {
       icon: "fas fa-laptop-code",
       title: "Custom Software Development",
       description: "Design and develop user-friendly software with intuitive interfaces tailored to your business needs.",
-      link: "/services#custom-development"
+      link: "#custom-development"
     },
     {
       icon: "fas fa-mobile-alt",
       title: "Cross-Platform Development",
       description: "Build applications that run seamlessly on Windows, macOS, Linux, iOS, and Android platforms.",
-      link: "/services#cross-platform"
+      link: "#cross-platform"
     },
     {
       icon: "fas fa-brain",
       title: "AI Integration",
       description: "Leverage AI for image & audio processing with face recognition, speech analysis, and LLM technologies.",
-      link: "/services#ai-integration"
+      link: "#ai-integration"
     },
     {
       icon: "fas fa-eye",
       title: "Object Tracking",
       description: "Implement real-time tracking and recognition of objects for security, behavior recognition and automation.",
-      link: "/services#object-tracking"
+      link: "#object-tracking"
     }
   ];
 
@@ -227,6 +227,78 @@ const HomePage = () => {
               </div>
             </div>
           </div>
+
+          <div id="ai-integration" className="mb-20">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div className="order-2 md:order-1">
+                <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">AI Integration</h2>
+                <p className="text-neutral-600 mb-6">
+                  We leverage artificial intelligence technologies to add advanced capabilities to your applications and automate complex tasks.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span>Image and audio processing capabilities</span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span>Natural language processing and generation</span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span>Predictive analytics and data insights</span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span>Custom AI model development and training</span>
+                  </li>
+                </ul>
+              </div>
+              <div className="order-1 md:order-2">
+                <img 
+                  src="https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                  alt="AI technology visualization" 
+                  className="rounded-lg shadow-lg w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div id="object-tracking" className="mb-20">
+            <div className="grid md:grid-cols-2 gap-10 items-center">
+              <div>
+                <img 
+                  src="https://images.unsplash.com/photo-1563396983906-b3795482a59a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                  alt="Object tracking and recognition" 
+                  className="rounded-lg shadow-lg w-full h-auto"
+                />
+              </div>
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">Object Tracking</h2>
+                <p className="text-neutral-600 mb-6">
+                  We implement real-time tracking and recognition systems for security, behavior analysis, and process automation.
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span>Real-time object detection and tracking</span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span>Behavioral pattern recognition</span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span>Security monitoring and threat detection</span>
+                  </li>
+                  <li className="flex items-start">
+                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                    <span>Process automation based on visual inputs</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </Container>
       </section>
 
@@ -370,7 +442,7 @@ const HomePage = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-neutral-900 mb-1">Email</h3>
-                      <p className="text-neutral-600">info@crossgosoftware.github.io</p>
+                      <p className="text-neutral-600">info@crossgo.tech</p>
                     </div>
                   </div>
                   

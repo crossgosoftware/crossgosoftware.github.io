@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { scrollToSection } from "@/lib/utils";
 
 interface ServiceCardProps {
   icon: string;
@@ -8,6 +8,13 @@ interface ServiceCardProps {
 }
 
 const ServiceCard = ({ icon, title, description, link }: ServiceCardProps) => {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    // Extract the section ID from the link (remove the '#')
+    const sectionId = link.replace('#', '');
+    scrollToSection(sectionId);
+  };
+
   return (
     <div className="service-card bg-white rounded-xl shadow-md hover:shadow-lg p-6 flex flex-col items-center text-center">
       <div className="w-16 h-16 rounded-full bg-primary-light/10 flex items-center justify-center mb-4">
@@ -17,10 +24,14 @@ const ServiceCard = ({ icon, title, description, link }: ServiceCardProps) => {
       <p className="text-neutral-600 mb-4">
         {description}
       </p>
-      <Link href={link} className="text-primary hover:text-primary-dark font-medium inline-flex items-center mt-auto">
+      <a 
+        href={link} 
+        onClick={handleClick}
+        className="text-primary hover:text-primary-dark font-medium inline-flex items-center mt-auto cursor-pointer"
+      >
         Learn more
         <i className="fas fa-arrow-right ml-2 text-sm"></i>
-      </Link>
+      </a>
     </div>
   );
 };
