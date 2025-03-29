@@ -42,7 +42,7 @@ var vite_config_default = defineConfig({
   },
   root: path.resolve(__dirname, "client"),
   build: {
-    outDir: "dist/public",
+    outDir: "dist",
     // Explicitly sets the correct folder
     rollupOptions: {
       input: "/index.html"
