@@ -104,33 +104,31 @@ const HomePage = () => {
   return (
     <div className="pt-16">
       {/* Hero Section */}
-      <section id="home" className="hero-gradient text-white">
+      <section id="home" className="hero-section text-white">
         <Container className="py-20 md:py-28">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-inter leading-tight mb-6">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-white to-neutral-100">CrossGo</span>
+          <div className="max-w-4xl mx-auto">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              Your Partner for Innovative<br />Software & AI Solutions
             </h1>
-            <p className="text-xl md:text-2xl font-medium mb-8">Transforming Ideas into Technology Solutions</p>
-            <p className="text-lg mb-10 max-w-2xl mx-auto">
-              Your partner for innovative software & AI solutions. We help businesses optimize workflows, enhance user experience, and leverage the power of artificial intelligence.
+            <p className="text-lg mb-10 max-w-2xl">
+              We help businesses transform their ideas into reality through custom software development, cross-platform solutions, and cutting-edge AI integration.
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 className="bg-white text-primary hover:bg-neutral-100"
-                onClick={() => scrollToSection('services')}
-              >
-                Explore Our Services
-              </Button>
-              <Button 
-                className="bg-accent hover:bg-accent-dark text-white"
                 onClick={() => scrollToSection('contact')}
               >
-                Discuss Your Project
+                Get Started
+              </Button>
+              <Button 
+                className="bg-transparent border border-white text-white hover:bg-white/10"
+                onClick={() => scrollToSection('services')}
+              >
+                Our Services
               </Button>
             </div>
           </div>
         </Container>
-        <div className="bg-white w-full h-16 rounded-tl-[5rem]"></div>
       </section>
 
       {/* Services Overview */}

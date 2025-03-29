@@ -11,3 +11,22 @@
     @apply font-sans antialiased bg-background text-foreground;
   }
 }
+
+@layer components {
+  .hero-section {
+    @apply bg-[#0e1c45] relative overflow-hidden;
+  }
+  
+  .nav-link {
+    @apply text-base font-medium transition-colors;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply block absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}

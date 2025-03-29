@@ -42,42 +42,39 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                CG
-              </div>
-              <span className="text-xl font-bold font-inter text-primary">CrossGo</span>
+            <Link href="/" className="flex items-center">
+              <span className="text-2xl font-bold text-primary">CrossGo</span>
             </Link>
           </div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" 
-              className={`relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors ${location === '/' ? 'after:w-full' : ''}`}
+              className={`relative nav-link text-neutral-800 hover:text-primary ${location === '/' ? 'text-primary' : ''}`}
               onClick={(e) => handleNavLinkClick(e, 'home')}
             >
               Home
             </Link>
             <Link href={location === '/' ? '#services' : '/services'} 
-              className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
+              className={`relative nav-link text-neutral-800 hover:text-primary ${location.includes('service') ? 'text-primary' : ''}`}
               onClick={(e) => handleNavLinkClick(e, 'services')}
             >
               Services
             </Link>
             <Link href={location === '/' ? '#portfolio' : '/portfolio'} 
-              className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
+              className={`relative nav-link text-neutral-800 hover:text-primary ${location.includes('portfolio') ? 'text-primary' : ''}`}
               onClick={(e) => handleNavLinkClick(e, 'portfolio')}
             >
               Portfolio
             </Link>
             <Link href={location === '/' ? '#about' : '/about'} 
-              className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
+              className={`relative nav-link text-neutral-800 hover:text-primary ${location.includes('about') ? 'text-primary' : ''}`}
               onClick={(e) => handleNavLinkClick(e, 'about')}
             >
-              About Us
+              About
             </Link>
             <Link href={location === '/' ? '#contact' : '/contact'} 
-              className="relative nav-link font-medium text-neutral-800 hover:text-primary transition-colors"
+              className={`relative nav-link text-neutral-800 hover:text-primary ${location.includes('contact') ? 'text-primary' : ''}`}
               onClick={(e) => handleNavLinkClick(e, 'contact')}
             >
               Contact
@@ -86,7 +83,7 @@ const Header = () => {
           
           <div className="hidden md:block">
             <Link href="/contact" onClick={closeMobileMenu}>
-              <Button className="bg-accent hover:bg-accent-dark text-white">
+              <Button className="bg-primary hover:bg-primary/90 text-white rounded-md">
                 Get a Quote
               </Button>
             </Link>
@@ -129,7 +126,7 @@ const Header = () => {
               className={`font-medium ${location === '/about' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
               onClick={closeMobileMenu}
             >
-              About Us
+              About
             </Link>
             <Link href="/contact"
               className={`font-medium ${location === '/contact' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
@@ -138,7 +135,7 @@ const Header = () => {
               Contact
             </Link>
             <Link href="/contact"
-              className="bg-accent hover:bg-accent-dark text-white font-medium py-2 px-4 rounded-lg transition-colors text-center mt-2"
+              className="bg-primary hover:bg-primary/90 text-white font-medium py-2 px-4 rounded-md transition-colors text-center mt-2"
               onClick={closeMobileMenu}
             >
               Get a Quote

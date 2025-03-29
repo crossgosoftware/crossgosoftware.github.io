@@ -44,7 +44,7 @@ const ContactPage = () => {
   return (
     <div className="pt-16">
       {/* Contact Header */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 hero-section text-white">
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-3xl md:text-4xl font-bold font-inter mb-4">Contact Us</h1>
