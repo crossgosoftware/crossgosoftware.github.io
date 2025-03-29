@@ -46,7 +46,7 @@ var vite_config_default = defineConfig({
   root: path.resolve(__dirname, "client"),
   // Sets /client as the root
   build: {
-    outDir: path.resolve(__dirname, "dist"),
+    outDir: "dist",
     // Moves /client/dist to root /dist
     emptyOutDir: true,
     // Cleans /dist before build
