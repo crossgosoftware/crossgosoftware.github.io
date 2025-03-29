@@ -30,7 +30,7 @@ export default defineConfig({
     outDir: "dist", // Moves /client/dist to root /dist
     emptyOutDir: true,                        // Cleans /dist before build
     rollupOptions: {
-      input: "/index.html", // Ensures correct HTML
+      input: path.resolve(__dirname, "client/index.html"), // Ensures correct HTML
     },
   },
 });
