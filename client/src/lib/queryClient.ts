@@ -1,5 +1,13 @@
 import { QueryClient, QueryFunction } from "@tanstack/react-query";
 
+// For GitHub Pages static deployment, we'll use mock data
+const STATIC_MODE = true;
+
+// Mock API responses for static site (GitHub Pages)
+const mockResponses: Record<string, any> = {
+  // Add mock API responses here as needed
+};
+
 async function throwIfResNotOk(res: Response) {
   if (!res.ok) {
     const text = (await res.text()) || res.statusText;
@@ -12,6 +20,14 @@ export async function apiRequest(
   url: string,
   data?: unknown | undefined,
 ): Promise<Response> {
+  // For static sites, return mocked data
+  if (STATIC_MODE) {
+    return new Response(JSON.stringify(data || {}), {
+      headers: { 'Content-Type': 'application/json' },
+      status: 200,
+    });
+  }
+
   const res = await fetch(url, {
     method,
     headers: data ? { "Content-Type": "application/json" } : {},
@@ -29,6 +45,12 @@ export const getQueryFn: <T>(options: {
 }) => QueryFunction<T> =
   ({ on401: unauthorizedBehavior }) =>
   async ({ queryKey }) => {
+    // For static sites, return mocked data
+    if (STATIC_MODE) {
+      const key = queryKey[0] as string;
+      return mockResponses[key] || {};
+    }
+
     const res = await fetch(queryKey[0] as string, {
       credentials: "include",
     });

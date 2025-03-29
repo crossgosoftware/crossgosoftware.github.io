@@ -461,9 +461,10 @@ const HomePage = () => {
                       <select 
                         id="service" 
                         name="service" 
+                        defaultValue=""
                         className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors"
                       >
-                        <option value="" selected disabled>What service are you interested in?</option>
+                        <option value="" disabled>What service are you interested in?</option>
                         <option value="custom-development">Custom Software Development</option>
                         <option value="cross-platform">Cross-Platform Development</option>
                         <option value="ai-integration">AI Integration</option>

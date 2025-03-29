@@ -16,7 +16,7 @@ const __dirname = path.dirname(__filename);
 
 // Configuration
 const DIST_DIR = path.join(__dirname, 'dist');
-const PUBLIC_DIR = path.join(__dirname, 'client', 'public');
+const PUBLIC_DIR = path.join(__dirname, 'public');
 
 // Ensure the dist directory exists
 if (!fs.existsSync(DIST_DIR)) {
@@ -135,6 +135,29 @@ const buildApp = () => {
   });
 };
 
+// Copy public files to dist directory
+const copyPublicFiles = () => {
+  console.log('Copying public files to dist directory...');
+  
+  if (fs.existsSync(PUBLIC_DIR)) {
+    const files = fs.readdirSync(PUBLIC_DIR);
+    
+    files.forEach(file => {
+      const srcPath = path.join(PUBLIC_DIR, file);
+      const destPath = path.join(DIST_DIR, file);
+      
+      // Skip if it's a directory (for now, we only need to copy files)
+      if (fs.statSync(srcPath).isDirectory()) return;
+      
+      // Copy the file
+      fs.copyFileSync(srcPath, destPath);
+      console.log(`Copied ${file} to dist directory`);
+    });
+  } else {
+    console.warn('Public directory not found. Skipping public file copying.');
+  }
+};
+
 // Main function
 const main = async () => {
   try {
@@ -142,6 +165,7 @@ const main = async () => {
     create404Html();
     modifyIndexHtml();
     createNoJekyllFile();
+    copyPublicFiles();
     
     console.log('\n✓ GitHub Pages build complete!\n');
     console.log('Your site is ready to be deployed. To deploy to GitHub Pages:');

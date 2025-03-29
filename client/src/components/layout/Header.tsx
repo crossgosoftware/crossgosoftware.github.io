@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "wouter";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { scrollToSection } from "@/lib/utils";
+import { scrollToSection, useHashLocation } from "@/lib/utils";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [location] = useLocation();
+  const [location, navigate] = useHashLocation();
   const [isScrolled, setIsScrolled] = useState(false);
 
   // Handle scroll event to add shadow to header
