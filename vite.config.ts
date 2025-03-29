@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default defineConfig({
-  base: "/crossgosoftware.github.io/",  // <-- Add your repo name
+  base: "/crossgosoftware.github.io/",  // GitHub Pages base URL
   plugins: [
     react(),
     runtimeErrorOverlay(),
@@ -20,16 +20,18 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "client", "src"),
-      "@shared": path.resolve(__dirname, "shared"),
-      "@assets": path.resolve(__dirname, "attached_assets"),
+      "@": path.resolve(__dirname, "client", "src"),  // Resolves to /client/src
+      "@shared": path.resolve(__dirname, "shared"),   // Shared folder
+      "@assets": path.resolve(__dirname, "attached_assets"), // Custom assets
     },
   },
-  root: path.resolve(__dirname, "client"),
+  root: path.resolve(__dirname, "client"),  // Sets /client as the root
   build: {
-    outDir: "dist", // Explicitly sets the correct folder
+    outDir: path.resolve(__dirname, "dist"), // Moves /client/dist to root /dist
+    assetsDir: "assets",                      // Keeps assets in /dist/assets
+    emptyOutDir: true,                        // Cleans /dist before build
     rollupOptions: {
-      input: "/index.html", // Make sure this is correct
+      input: path.resolve(__dirname, "client", "index.html"), // Ensures correct HTML
     },
   },
 });
