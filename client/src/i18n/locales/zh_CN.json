@@ -1,0 +1,246 @@
+{
+  "common": {
+    "language": "简体中文",
+    "menu": {
+      "home": "首页",
+      "about": "关于我们",
+      "services": "服务",
+      "portfolio": "作品集",
+      "contact": "联系我们"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "将创意转化为技术解决方案",
+      "subtitle": "我们提供尖端软件解决方案，帮助企业在数字时代蓬勃发展",
+      "cta": "开始使用"
+    },
+    "about": {
+      "title": "关于 CrossGo",
+      "description": "CrossGo 是一家领先的软件开发公司，专注于定制软件解决方案、跨平台开发、人工智能集成和对象跟踪技术。凭借多年经验，我们帮助企业将创意转化为现实。"
+    },
+    "services": {
+      "title": "我们的服务",
+      "description": "我们提供广泛的服务，帮助企业利用技术实现增长和创新",
+      "custom_software": {
+        "title": "定制软件开发",
+        "description": "量身定制的软件解决方案，旨在解决您独特的业务需求和挑战。",
+        "learn_more": "了解更多"
+      },
+      "cross_platform": {
+        "title": "跨平台开发",
+        "description": "构建可在多个平台和设备上无缝运行的应用程序。",
+        "learn_more": "了解更多"
+      },
+      "ai_integration": {
+        "title": "人工智能集成",
+        "description": "结合人工智能技术，为您的应用程序增添智能功能。",
+        "learn_more": "了解更多"
+      },
+      "object_tracking": {
+        "title": "对象跟踪",
+        "description": "用于实时应用中跟踪和监控对象的先进技术。",
+        "learn_more": "了解更多"
+      }
+    },
+    "features": {
+      "title": "为什么选择我们",
+      "expertise": {
+        "title": "技术专长",
+        "description": "我们的团队由精通各种技术的高技能开发人员组成。"
+      },
+      "quality": {
+        "title": "质量保证",
+        "description": "我们遵循严格的测试程序，确保高质量的交付成果。"
+      },
+      "support": {
+        "title": "持续支持",
+        "description": "我们为所有解决方案提供持续的维护和支持。"
+      }
+    },
+    "cta": {
+      "title": "准备好转变您的创意了吗？",
+      "description": "立即联系我们，讨论我们如何帮助您的企业通过我们的技术解决方案成长。",
+      "button": "联系我们"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "main_paragraph": "我们是一家软件公司，专注于提供现代技术解决方案，帮助企业优化工作流程，提升用户体验，并利用人工智能的力量。",
+    "mission": "在CrossGo，我们相信技术应该为人服务，而不是相反。我们的使命是创造直观、强大的软件，解决实际问题并产生有意义的影响。",
+    "experience": {
+      "years": "10+",
+      "text": "年卓越经验"
+    },
+    "values": {
+      "innovation": {
+        "title": "创新",
+        "description": "我们不断探索新技术和方法"
+      },
+      "collaboration": {
+        "title": "协作",
+        "description": "我们与客户紧密合作以了解他们的需求"
+      },
+      "excellence": {
+        "title": "卓越",
+        "description": "我们在所有交付中追求质量"
+      }
+    },
+    "mission_statement": {
+      "title": "我们的使命",
+      "description": "提供创新可靠的软件解决方案，帮助企业实现目标。"
+    },
+    "vision": {
+      "title": "我们的愿景",
+      "description": "成为推动业务转型的尖端技术解决方案的领先提供商。"
+    },
+    "team": {
+      "title": "我们的团队",
+      "description": "认识我们成功背后的人才团队。"
+    }
+  },
+  "services": {
+    "title": "我们的服务",
+    "description": "针对您业务需求的全面技术解决方案",
+    "custom_software": {
+      "title": "定制软件开发",
+      "description": "我们构建量身定制的软件解决方案，解决您特定的业务挑战和需求。我们经验丰富的开发团队与您紧密合作，了解您的需求并创建能够简化运营和提高效率的应用程序。",
+      "benefits": [
+        "根据您的特定业务需求量身定制",
+        "随着业务增长可扩展和适应",
+        "增强安全性和合规性",
+        "提高效率和生产力"
+      ]
+    },
+    "cross_platform": {
+      "title": "跨平台开发",
+      "description": "我们的跨平台开发服务使您能够通过单一代码库覆盖不同设备和平台的用户。这种方法减少了开发时间和成本，同时确保了所有平台上的一致用户体验。",
+      "benefits": [
+        "减少开发时间和成本",
+        "跨平台一致的用户体验",
+        "更容易维护和更新",
+        "更广阔的市场覆盖"
+      ]
+    },
+    "ai_integration": {
+      "title": "人工智能集成",
+      "description": "我们帮助企业利用人工智能的力量自动化流程、从数据中获取见解并增强客户体验。我们的人工智能集成服务包括机器学习模型、自然语言处理和计算机视觉解决方案。",
+      "benefits": [
+        "自动化流程和工作流程",
+        "通过数据洞察增强决策",
+        "改善客户体验",
+        "预测分析功能"
+      ]
+    },
+    "object_tracking": {
+      "title": "对象跟踪",
+      "description": "我们先进的对象跟踪解决方案可以在各种应用中实时监控和分析对象。这种技术在物流、零售、安全和制造等跟踪资产和库存至关重要的领域特别有用。",
+      "benefits": [
+        "实时监控资产和库存",
+        "增强安全和监控",
+        "改善供应链可见性",
+        "减少损失和运营成本"
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "我们的作品集",
+    "description": "探索我们近期的项目和成功案例",
+    "view_project": "查看项目",
+    "view_all": "查看所有项目",
+    "projects": {
+      "fashion": {
+        "title": "时尚零售平台",
+        "description": "具有AI驱动推荐和视觉搜索功能的多平台购物体验。"
+      },
+      "surveillance": {
+        "title": "智能监控系统",
+        "description": "具有实时对象跟踪和行为分析功能的智能安全解决方案。"
+      },
+      "medical": {
+        "title": "医疗诊断助手",
+        "description": "一种AI驱动的工具，帮助医疗专业人员分析医学图像并诊断疾病。"
+      }
+    },
+    "tags": {
+      "cross_platform": "跨平台应用",
+      "ecommerce": "电子商务",
+      "object_tracking": "对象跟踪",
+      "security": "安全",
+      "ai": "AI集成",
+      "healthcare": "医疗保健"
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "description": "准备将您的想法转变为技术解决方案了吗？请联系我们，讨论您的项目或了解我们的服务。",
+    "getInTouch": "联系我们",
+    "address": {
+      "title": "地址",
+      "value": "美国加利福尼亚州科技谷创新大道123号，邮编94025"
+    },
+    "email": {
+      "title": "电子邮件",
+      "value": "crossgosoftwaresolution@gmail.com"
+    },
+    "phone": {
+      "title": "电话",
+      "value": "+1 (555) 123-4567"
+    },
+    "form": {
+      "name": "姓名",
+      "yourName": "您的姓名",
+      "email": "电子邮件",
+      "yourEmail": "您的电子邮件",
+      "phone": "电话",
+      "yourPhone": "您的电话（可选）",
+      "company": "公司",
+      "yourCompany": "您的公司（可选）",
+      "subject": "主题",
+      "selectSubject": "选择主题",
+      "message": "留言",
+      "yourMessage": "您的留言",
+      "sending": "发送中...",
+      "sendMessage": "发送消息",
+      "submit": "索取报价",
+      "subjects": {
+        "generalInquiry": "一般咨询",
+        "customSoftware": "定制软件开发",
+        "crossPlatform": "跨平台开发",
+        "aiIntegration": "人工智能集成",
+        "objectTracking": "对象跟踪",
+        "other": "其他"
+      }
+    },
+    "successMessage": {
+      "title": "消息发送成功！",
+      "description": "感谢您联系CrossGo。我们已收到您的消息，并将尽快回复您。"
+    },
+    "toast": {
+      "success": {
+        "title": "消息已发送！",
+        "description": "感谢您的留言。我们会尽快回复您。"
+      },
+      "error": {
+        "title": "错误",
+        "description": "发送您的消息失败。请稍后再试。",
+        "unexpectedError": "发生意外错误。请稍后再试。"
+      }
+    },
+    "info": {
+      "title": "联系信息",
+      "address": "地址",
+      "phone": "电话",
+      "email": "电子邮件"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 CrossGo。保留所有权利。",
+    "social": {
+      "follow": "关注我们"
+    },
+    "links": {
+      "title": "快速链接"
+    }
+  }
+}

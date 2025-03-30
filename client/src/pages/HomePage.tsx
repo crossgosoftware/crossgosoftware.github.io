@@ -5,32 +5,35 @@ import SectionHeader from "@/components/ui/section-header";
 import ServiceCard from "@/components/ui/service-card";
 import FeatureCard from "@/components/ui/feature-card";
 import ProjectCard from "@/components/ui/project-card";
+import ContactForm from "@/components/ui/contact-form";
 import { scrollToSection } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
 
 const HomePage = () => {
+  const { t } = useTranslation();
   const services = [
     {
       icon: "fas fa-laptop-code",
-      title: "Custom Software Development",
-      description: "Design and develop user-friendly software with intuitive interfaces tailored to your business needs.",
+      title: t('home.services.custom_software.title'),
+      description: t('home.services.custom_software.description'),
       link: "#custom-development"
     },
     {
       icon: "fas fa-mobile-alt",
-      title: "Cross-Platform Development",
-      description: "Build applications that run seamlessly on Windows, macOS, Linux, iOS, and Android platforms.",
+      title: t('home.services.cross_platform.title'),
+      description: t('home.services.cross_platform.description'),
       link: "#cross-platform"
     },
     {
       icon: "fas fa-brain",
-      title: "AI Integration",
-      description: "Leverage AI for image & audio processing with face recognition, speech analysis, and LLM technologies.",
+      title: t('home.services.ai_integration.title'),
+      description: t('home.services.ai_integration.description'),
       link: "#ai-integration"
     },
     {
       icon: "fas fa-eye",
-      title: "Object Tracking",
-      description: "Implement real-time tracking and recognition of objects for security, behavior recognition and automation.",
+      title: t('home.services.object_tracking.title'),
+      description: t('home.services.object_tracking.description'),
       link: "#object-tracking"
     }
   ];
@@ -38,64 +41,49 @@ const HomePage = () => {
   const features = [
     {
       icon: "fas fa-user-tie",
-      title: "Experienced Experts",
-      description: "Our team consists of specialized engineers in software development, AI, and UX/UI design with years of industry experience."
+      title: t('home.features.expertise.title'),
+      description: t('home.features.expertise.description')
     },
     {
       icon: "fas fa-rocket",
-      title: "Cutting-Edge Technology",
-      description: "We stay updated with the latest technologies to deliver optimal solutions that keep your business ahead of the competition."
+      title: t('home.features.quality.title'),
+      description: t('home.features.quality.description')
     },
     {
       icon: "fas fa-puzzle-piece",
-      title: "Tailored Solutions",
-      description: "We develop flexible solutions designed to meet your specific business needs, not one-size-fits-all approaches."
-    },
-    {
-      icon: "fas fa-headset",
-      title: "Long-Term Support",
-      description: "We provide ongoing maintenance and support throughout the entire lifecycle of your product to ensure optimal performance."
-    },
-    {
-      icon: "fas fa-shield-alt",
-      title: "Enterprise Security",
-      description: "We implement robust security measures to protect your data and applications from potential threats and vulnerabilities."
-    },
-    {
-      icon: "fas fa-handshake",
-      title: "Collaborative Approach",
-      description: "We work closely with your team to understand your goals and ensure that our solutions align with your business objectives."
+      title: t('home.features.support.title'),
+      description: t('home.features.support.description')
     }
   ];
 
   const projects = [
     {
       image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
-      title: "Fashion Retail Platform",
-      description: "A multi-platform shopping experience with AI-powered recommendations and visual search.",
+      title: t('portfolio.projects.fashion.title'),
+      description: t('portfolio.projects.fashion.description'),
       tags: [
-        { label: "Cross-Platform App", color: "bg-blue-100 text-blue-800" },
-        { label: "E-commerce", color: "bg-purple-100 text-purple-800" }
+        { label: t('portfolio.tags.cross_platform'), color: "bg-blue-100 text-blue-800" },
+        { label: t('portfolio.tags.ecommerce'), color: "bg-purple-100 text-purple-800" }
       ],
       link: "/portfolio/fashion-retail"
     },
     {
       image: "https://images.unsplash.com/photo-1581092335397-9fa73b6c2904?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
-      title: "Smart Surveillance System",
-      description: "An intelligent security solution with real-time object tracking and behavior analysis.",
+      title: t('portfolio.projects.surveillance.title'),
+      description: t('portfolio.projects.surveillance.description'),
       tags: [
-        { label: "Object Tracking", color: "bg-green-100 text-green-800" },
-        { label: "Security", color: "bg-yellow-100 text-yellow-800" }
+        { label: t('portfolio.tags.object_tracking'), color: "bg-green-100 text-green-800" },
+        { label: t('portfolio.tags.security'), color: "bg-yellow-100 text-yellow-800" }
       ],
       link: "/portfolio/surveillance-system"
     },
     {
       image: "https://images.unsplash.com/photo-1543269664-76bc3997d9ea?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80",
-      title: "Medical Diagnostic Assistant",
-      description: "An AI-powered tool that helps healthcare professionals analyze medical images and diagnose conditions.",
+      title: t('portfolio.projects.medical.title'),
+      description: t('portfolio.projects.medical.description'),
       tags: [
-        { label: "AI Integration", color: "bg-red-100 text-red-800" },
-        { label: "Healthcare", color: "bg-indigo-100 text-indigo-800" }
+        { label: t('portfolio.tags.ai'), color: "bg-red-100 text-red-800" },
+        { label: t('portfolio.tags.healthcare'), color: "bg-indigo-100 text-indigo-800" }
       ],
       link: "/portfolio/medical-diagnostic"
     }
@@ -108,23 +96,23 @@ const HomePage = () => {
         <Container className="py-20 md:py-28">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              Your Partner for Innovative<br />Software & AI Solutions
+              {t('home.hero.title')}
             </h1>
             <p className="text-lg mb-10 max-w-2xl">
-              We help businesses transform their ideas into reality through custom software development, cross-platform solutions, and cutting-edge AI integration.
+              {t('home.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 className="bg-white text-primary hover:bg-neutral-100"
                 onClick={() => scrollToSection('contact')}
               >
-                Get Started
+                {t('home.hero.cta')}
               </Button>
               <Button 
                 className="bg-transparent border border-white text-white hover:bg-white/10"
                 onClick={() => scrollToSection('services')}
               >
-                Our Services
+                {t('common.menu.services')}
               </Button>
             </div>
           </div>
@@ -135,8 +123,8 @@ const HomePage = () => {
       <section id="services" className="py-16 bg-white">
         <Container>
           <SectionHeader 
-            title="Our Expertise" 
-            subtitle="We deliver cutting-edge technology solutions tailored to meet your business needs"
+            title={t('home.services.title')}
+            subtitle={t('home.services.description')}
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -159,27 +147,17 @@ const HomePage = () => {
           <div id="custom-development" className="mb-20">
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div className="order-2 md:order-1">
-                <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">Custom Software Development</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">{t('home.services.custom_software.title')}</h2>
                 <p className="text-neutral-600 mb-6">
-                  We design and develop user-friendly software with intuitive interfaces that meet the specific needs of your business.
+                  {t('services.custom_software.description').split('.')[0]}.
                 </p>
                 <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Intuitive user interfaces to enhance user experience</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Optimized performance and enterprise-grade security</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Professional development process from consulting to maintenance</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Scalable architecture to grow with your business</span>
-                  </li>
+                  {(t('services.custom_software.benefits', { returnObjects: true }) as string[]).map((benefit: string, idx: number) => (
+                    <li key={idx} className="flex items-start">
+                      <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="order-1 md:order-2">
@@ -202,27 +180,17 @@ const HomePage = () => {
                 />
               </div>
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">Cross-Platform Development</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">{t('home.services.cross_platform.title')}</h2>
                 <p className="text-neutral-600 mb-6">
-                  We develop applications that run seamlessly across Windows, macOS, Linux, iOS, and Android platforms with consistent UI/UX.
+                  {t('services.cross_platform.description').split('.')[0]}.
                 </p>
                 <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Simultaneous deployment across multiple platforms</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>High performance and consistent user experience</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Cost-effective development and maintenance</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Native-like features across all devices</span>
-                  </li>
+                  {(t('services.cross_platform.benefits', { returnObjects: true }) as string[]).map((benefit: string, idx: number) => (
+                    <li key={idx} className="flex items-start">
+                      <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -231,27 +199,17 @@ const HomePage = () => {
           <div id="ai-integration" className="mb-20">
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div className="order-2 md:order-1">
-                <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">AI Integration</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">{t('home.services.ai_integration.title')}</h2>
                 <p className="text-neutral-600 mb-6">
-                  We leverage artificial intelligence technologies to add advanced capabilities to your applications and automate complex tasks.
+                  {t('services.ai_integration.description').split('.')[0]}.
                 </p>
                 <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Image and audio processing capabilities</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Natural language processing and generation</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Predictive analytics and data insights</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Custom AI model development and training</span>
-                  </li>
+                  {(t('services.ai_integration.benefits', { returnObjects: true }) as string[]).map((benefit: string, idx: number) => (
+                    <li key={idx} className="flex items-start">
+                      <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="order-1 md:order-2">
@@ -274,27 +232,17 @@ const HomePage = () => {
                 />
               </div>
               <div>
-                <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">Object Tracking</h2>
+                <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">{t('home.services.object_tracking.title')}</h2>
                 <p className="text-neutral-600 mb-6">
-                  We implement real-time tracking and recognition systems for security, behavior analysis, and process automation.
+                  {t('services.object_tracking.description').split('.')[0]}.
                 </p>
                 <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Real-time object detection and tracking</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Behavioral pattern recognition</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Security monitoring and threat detection</span>
-                  </li>
-                  <li className="flex items-start">
-                    <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                    <span>Process automation based on visual inputs</span>
-                  </li>
+                  {(t('services.object_tracking.benefits', { returnObjects: true }) as string[]).map((benefit: string, idx: number) => (
+                    <li key={idx} className="flex items-start">
+                      <i className="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -306,8 +254,8 @@ const HomePage = () => {
       <section className="py-16 bg-white">
         <Container>
           <SectionHeader 
-            title="Why Choose Us" 
-            subtitle="Partner with CrossGo for technology solutions that elevate your business"
+            title={t('home.features.title')}
+            subtitle={t('home.features.description')}
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -327,8 +275,8 @@ const HomePage = () => {
       <section id="portfolio" className="py-16 bg-neutral-50">
         <Container>
           <SectionHeader 
-            title="Our Work" 
-            subtitle="Explore some of our recent projects and success stories"
+            title={t('portfolio.title')}
+            subtitle={t('portfolio.description')}
           />
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -347,7 +295,7 @@ const HomePage = () => {
           <div className="text-center mt-12">
             <Link href="/portfolio">
               <Button className="inline-flex items-center justify-center bg-white border border-primary text-primary hover:bg-primary hover:text-white">
-                View All Projects
+                {t('portfolio.view_all')}
                 <i className="fas fa-arrow-right ml-2"></i>
               </Button>
             </Link>
@@ -361,12 +309,12 @@ const HomePage = () => {
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold font-inter text-neutral-900 mb-6">About Us</h2>
+                <h2 className="text-3xl md:text-4xl font-bold font-inter text-neutral-900 mb-6">{t('about.title')}</h2>
                 <p className="text-lg text-neutral-600 mb-6">
-                  We are a software company specializing in providing modern technology solutions that help businesses optimize workflows, enhance user experience, and leverage the power of artificial intelligence.
+                  {t('about.main_paragraph')}
                 </p>
                 <p className="text-lg text-neutral-600 mb-6">
-                  At CrossGo, we believe that technology should work for people, not the other way around. Our mission is to create intuitive, powerful software that solves real problems and creates meaningful impact.
+                  {t('about.mission')}
                 </p>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center">
@@ -374,8 +322,8 @@ const HomePage = () => {
                       <i className="fas fa-lightbulb text-primary"></i>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-neutral-900">Innovation</h3>
-                      <p className="text-neutral-600">We constantly explore new technologies and approaches</p>
+                      <h3 className="font-semibold text-neutral-900">{t('about.values.innovation.title')}</h3>
+                      <p className="text-neutral-600">{t('about.values.innovation.description')}</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -383,8 +331,8 @@ const HomePage = () => {
                       <i className="fas fa-users text-primary"></i>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-neutral-900">Collaboration</h3>
-                      <p className="text-neutral-600">We work closely with clients to understand their needs</p>
+                      <h3 className="font-semibold text-neutral-900">{t('about.values.collaboration.title')}</h3>
+                      <p className="text-neutral-600">{t('about.values.collaboration.description')}</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -392,8 +340,8 @@ const HomePage = () => {
                       <i className="fas fa-award text-primary"></i>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-neutral-900">Excellence</h3>
-                      <p className="text-neutral-600">We strive for quality in everything we deliver</p>
+                      <h3 className="font-semibold text-neutral-900">{t('about.values.excellence.title')}</h3>
+                      <p className="text-neutral-600">{t('about.values.excellence.description')}</p>
                     </div>
                   </div>
                 </div>
@@ -405,8 +353,8 @@ const HomePage = () => {
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
                 <div className="absolute -bottom-5 -left-5 bg-primary text-white p-4 rounded-lg shadow-lg">
-                  <div className="text-4xl font-bold mb-1">10+</div>
-                  <div className="text-sm">Years of Excellence</div>
+                  <div className="text-4xl font-bold mb-1">{t('about.experience.years')}</div>
+                  <div className="text-sm">{t('about.experience.text')}</div>
                 </div>
               </div>
             </div>
@@ -420,9 +368,9 @@ const HomePage = () => {
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 gap-10">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold font-inter text-neutral-900 mb-6">Contact Us</h2>
+                <h2 className="text-3xl md:text-4xl font-bold font-inter text-neutral-900 mb-6">{t('contact.title')}</h2>
                 <p className="text-lg text-neutral-600 mb-8">
-                  Ready to transform your ideas into technology solutions? Reach out to discuss your project or learn more about our services.
+                  {t('contact.description')}
                 </p>
                 
                 <div className="space-y-6 mb-8">
@@ -431,8 +379,8 @@ const HomePage = () => {
                       <i className="fas fa-map-marker-alt text-primary"></i>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-neutral-900 mb-1">Address</h3>
-                      <p className="text-neutral-600">Your Location</p>
+                      <h3 className="font-semibold text-neutral-900 mb-1">{t('contact.address.title')}</h3>
+                      <p className="text-neutral-600">{t('contact.address.value')}</p>
                     </div>
                   </div>
                   
@@ -441,8 +389,8 @@ const HomePage = () => {
                       <i className="fas fa-envelope text-primary"></i>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-neutral-900 mb-1">Email</h3>
-                      <p className="text-neutral-600">info@crossgo.tech</p>
+                      <h3 className="font-semibold text-neutral-900 mb-1">{t('contact.email.title')}</h3>
+                      <p className="text-neutral-600">{t('contact.email.value')}</p>
                     </div>
                   </div>
                   
@@ -451,8 +399,8 @@ const HomePage = () => {
                       <i className="fas fa-phone-alt text-primary"></i>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-neutral-900 mb-1">Phone</h3>
-                      <p className="text-neutral-600">Your Phone Number</p>
+                      <h3 className="font-semibold text-neutral-900 mb-1">{t('contact.phone.title')}</h3>
+                      <p className="text-neutral-600">{t('contact.phone.value')}</p>
                     </div>
                   </div>
                 </div>
@@ -474,92 +422,7 @@ const HomePage = () => {
               </div>
               
               <div>
-                <div className="bg-white p-8 rounded-xl shadow-md">
-                  <h3 className="text-2xl font-bold font-inter text-neutral-900 mb-6">Get in Touch</h3>
-                  
-                  <form>
-                    <div className="grid md:grid-cols-2 gap-6 mb-6">
-                      <div>
-                        <label htmlFor="name" className="block text-sm font-medium text-neutral-700 mb-1">Name</label>
-                        <input 
-                          type="text" 
-                          id="name" 
-                          name="name" 
-                          className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors" 
-                          placeholder="Your name" 
-                          required 
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="company" className="block text-sm font-medium text-neutral-700 mb-1">Company</label>
-                        <input 
-                          type="text" 
-                          id="company" 
-                          name="company" 
-                          className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors" 
-                          placeholder="Your company (optional)" 
-                        />
-                      </div>
-                    </div>
-                    
-                    <div className="grid md:grid-cols-2 gap-6 mb-6">
-                      <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-neutral-700 mb-1">Email</label>
-                        <input 
-                          type="email" 
-                          id="email" 
-                          name="email" 
-                          className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors" 
-                          placeholder="Your email" 
-                          required 
-                        />
-                      </div>
-                      <div>
-                        <label htmlFor="phone" className="block text-sm font-medium text-neutral-700 mb-1">Phone</label>
-                        <input 
-                          type="tel" 
-                          id="phone" 
-                          name="phone" 
-                          className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors" 
-                          placeholder="Your phone (optional)" 
-                        />
-                      </div>
-                    </div>
-                    
-                    <div className="mb-6">
-                      <label htmlFor="service" className="block text-sm font-medium text-neutral-700 mb-1">Service Interest</label>
-                      <select 
-                        id="service" 
-                        name="service" 
-                        defaultValue=""
-                        className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors"
-                      >
-                        <option value="" disabled>What service are you interested in?</option>
-                        <option value="custom-development">Custom Software Development</option>
-                        <option value="cross-platform">Cross-Platform Development</option>
-                        <option value="ai-integration">AI Integration</option>
-                        <option value="object-tracking">Object Tracking</option>
-                        <option value="other">Other / Not Sure</option>
-                      </select>
-                    </div>
-                    
-                    <div className="mb-6">
-                      <label htmlFor="message" className="block text-sm font-medium text-neutral-700 mb-1">Message</label>
-                      <textarea 
-                        id="message" 
-                        name="message" 
-                        rows={4} 
-                        className="w-full px-4 py-2 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-colors" 
-                        placeholder="Tell us about your project or question" 
-                        required
-                      ></textarea>
-                    </div>
-                    
-                    <Button className="w-full bg-primary hover:bg-primary-dark text-white">
-                      Send Message
-                    </Button>
-                  </form>
-                </div>
+                <ContactForm />
               </div>
             </div>
           </div>

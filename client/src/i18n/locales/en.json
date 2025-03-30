@@ -1,0 +1,246 @@
+{
+  "common": {
+    "language": "English",
+    "menu": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Transforming Ideas into Technology Solutions",
+      "subtitle": "We deliver cutting-edge software solutions to help businesses thrive in the digital era",
+      "cta": "Get Started"
+    },
+    "about": {
+      "title": "About CrossGo",
+      "description": "CrossGo is a leading software development company specializing in custom software solutions, cross-platform development, AI integration and object tracking technologies. With years of experience, we help businesses transform their ideas into reality."
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "We offer a wide range of services to help businesses leverage technology for growth and innovation",
+      "custom_software": {
+        "title": "Custom Software Development",
+        "description": "Tailored software solutions designed to address your unique business needs and challenges.",
+        "learn_more": "Learn More"
+      },
+      "cross_platform": {
+        "title": "Cross-Platform Development",
+        "description": "Build applications that work seamlessly across multiple platforms and devices.",
+        "learn_more": "Learn More"
+      },
+      "ai_integration": {
+        "title": "AI Integration",
+        "description": "Incorporate artificial intelligence to enhance your applications with smart capabilities.",
+        "learn_more": "Learn More"
+      },
+      "object_tracking": {
+        "title": "Object Tracking",
+        "description": "Advanced technologies for tracking and monitoring objects in real-time applications.",
+        "learn_more": "Learn More"
+      }
+    },
+    "features": {
+      "title": "Why Choose Us",
+      "expertise": {
+        "title": "Technical Expertise",
+        "description": "Our team consists of skilled developers with expertise in various technologies."
+      },
+      "quality": {
+        "title": "Quality Assurance",
+        "description": "We follow rigorous testing procedures to ensure high-quality deliverables."
+      },
+      "support": {
+        "title": "Continuous Support",
+        "description": "We provide ongoing maintenance and support for all our solutions."
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Ideas?",
+      "description": "Contact us today to discuss how we can help your business grow with our technology solutions.",
+      "button": "Contact Us"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "main_paragraph": "We are a software company specializing in providing modern technology solutions that help businesses optimize workflows, enhance user experience, and leverage the power of artificial intelligence.",
+    "mission": "At CrossGo, we believe that technology should work for people, not the other way around. Our mission is to create intuitive, powerful software that solves real problems and creates meaningful impact.",
+    "experience": {
+      "years": "10+",
+      "text": "Years of Excellence"
+    },
+    "values": {
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly explore new technologies and approaches"
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "We work closely with clients to understand their needs"
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for quality in everything we deliver"
+      }
+    },
+    "mission_statement": {
+      "title": "Our Mission",
+      "description": "To deliver innovative and reliable software solutions that empower businesses to achieve their goals."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading provider of cutting-edge technology solutions that drive business transformation."
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Meet the talented individuals behind our success."
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Comprehensive technology solutions tailored to your business needs",
+    "custom_software": {
+      "title": "Custom Software Development",
+      "description": "We build tailored software solutions that address your specific business challenges and requirements. Our experienced development team works closely with you to understand your needs and create applications that streamline your operations and improve efficiency.",
+      "benefits": [
+        "Tailored to your specific business needs",
+        "Scalable and adaptable as your business grows",
+        "Enhanced security and compliance",
+        "Improved efficiency and productivity"
+      ]
+    },
+    "cross_platform": {
+      "title": "Cross-Platform Development",
+      "description": "Our cross-platform development services enable you to reach users across different devices and platforms with a single codebase. This approach reduces development time and costs while ensuring a consistent user experience across all platforms.",
+      "benefits": [
+        "Reduced development time and costs",
+        "Consistent user experience across platforms",
+        "Easier maintenance and updates",
+        "Broader market reach"
+      ]
+    },
+    "ai_integration": {
+      "title": "AI Integration",
+      "description": "We help businesses leverage the power of artificial intelligence to automate processes, gain insights from data, and enhance customer experiences. Our AI integration services include machine learning models, natural language processing, and computer vision solutions.",
+      "benefits": [
+        "Automated processes and workflows",
+        "Enhanced decision-making with data insights",
+        "Improved customer experiences",
+        "Predictive analytics capabilities"
+      ]
+    },
+    "object_tracking": {
+      "title": "Object Tracking",
+      "description": "Our advanced object tracking solutions enable real-time monitoring and analysis of objects in various applications. This technology is particularly useful in logistics, retail, security, and manufacturing sectors where tracking assets and inventory is critical.",
+      "benefits": [
+        "Real-time monitoring of assets and inventory",
+        "Enhanced security and surveillance",
+        "Improved supply chain visibility",
+        "Reduced losses and operational costs"
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "description": "Explore some of our recent projects and success stories",
+    "view_project": "View Project",
+    "view_all": "View All Projects",
+    "projects": {
+      "fashion": {
+        "title": "Fashion Retail Platform",
+        "description": "A multi-platform shopping experience with AI-powered recommendations and visual search."
+      },
+      "surveillance": {
+        "title": "Smart Surveillance System",
+        "description": "An intelligent security solution with real-time object tracking and behavior analysis."
+      },
+      "medical": {
+        "title": "Medical Diagnostic Assistant",
+        "description": "An AI-powered tool that helps healthcare professionals analyze medical images and diagnose conditions."
+      }
+    },
+    "tags": {
+      "cross_platform": "Cross-Platform App",
+      "ecommerce": "E-commerce",
+      "object_tracking": "Object Tracking",
+      "security": "Security",
+      "ai": "AI Integration",
+      "healthcare": "Healthcare"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Ready to transform your ideas into technology solutions? Reach out to discuss your project or learn more about our services.",
+    "getInTouch": "Get in Touch",
+    "address": {
+      "title": "Address",
+      "value": "123 Innovation Drive, Tech Valley, CA 94025"
+    },
+    "email": {
+      "title": "Email",
+      "value": "crossgosoftwaresolution@gmail.com"
+    },
+    "phone": {
+      "title": "Phone",
+      "value": "+1 (555) 123-4567"
+    },
+    "form": {
+      "name": "Name",
+      "yourName": "Your name",
+      "email": "Email",
+      "yourEmail": "Your email",
+      "phone": "Phone",
+      "yourPhone": "Your phone (optional)",
+      "company": "Company",
+      "yourCompany": "Your company (optional)",
+      "subject": "Subject",
+      "selectSubject": "Select a subject",
+      "message": "Message",
+      "yourMessage": "Your message",
+      "sending": "Sending...",
+      "sendMessage": "Send Message",
+      "submit": "Request Pricing",
+      "subjects": {
+        "generalInquiry": "General Inquiry",
+        "customSoftware": "Custom Software Development",
+        "crossPlatform": "Cross-Platform Development",
+        "aiIntegration": "AI Integration",
+        "objectTracking": "Object Tracking",
+        "other": "Other"
+      }
+    },
+    "successMessage": {
+      "title": "Message Sent Successfully!",
+      "description": "Thank you for contacting CrossGo. We've received your message and will get back to you as soon as possible."
+    },
+    "toast": {
+      "success": {
+        "title": "Message sent!",
+        "description": "Thank you for your message. We'll get back to you soon."
+      },
+      "error": {
+        "title": "Error",
+        "description": "Failed to send your message. Please try again later.",
+        "unexpectedError": "An unexpected error occurred. Please try again later."
+      }
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 CrossGo. All rights reserved.",
+    "social": {
+      "follow": "Follow Us"
+    },
+    "links": {
+      "title": "Quick Links"
+    }
+  }
+}

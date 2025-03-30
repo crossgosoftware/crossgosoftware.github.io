@@ -2,11 +2,14 @@ import { useState, useEffect } from "react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { scrollToSection, useHashLocation } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "@/components/ui/language-switcher";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [location, navigate] = useHashLocation();
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useTranslation();
 
   // Handle scroll event to add shadow to header
   useEffect(() => {
@@ -53,38 +56,39 @@ const Header = () => {
               className={`relative nav-link text-neutral-800 hover:text-primary ${location === '/' ? 'text-primary' : ''}`}
               onClick={(e) => handleNavLinkClick(e, 'home')}
             >
-              Home
+              {t('common.menu.home')}
             </Link>
             <Link href={location === '/' ? '#services' : '/services'} 
               className={`relative nav-link text-neutral-800 hover:text-primary ${location.includes('service') ? 'text-primary' : ''}`}
               onClick={(e) => handleNavLinkClick(e, 'services')}
             >
-              Services
+              {t('common.menu.services')}
             </Link>
             <Link href={location === '/' ? '#portfolio' : '/portfolio'} 
               className={`relative nav-link text-neutral-800 hover:text-primary ${location.includes('portfolio') ? 'text-primary' : ''}`}
               onClick={(e) => handleNavLinkClick(e, 'portfolio')}
             >
-              Portfolio
+              {t('common.menu.portfolio')}
             </Link>
             <Link href={location === '/' ? '#about' : '/about'} 
               className={`relative nav-link text-neutral-800 hover:text-primary ${location.includes('about') ? 'text-primary' : ''}`}
               onClick={(e) => handleNavLinkClick(e, 'about')}
             >
-              About
+              {t('common.menu.about')}
             </Link>
             <Link href={location === '/' ? '#contact' : '/contact'} 
               className={`relative nav-link text-neutral-800 hover:text-primary ${location.includes('contact') ? 'text-primary' : ''}`}
               onClick={(e) => handleNavLinkClick(e, 'contact')}
             >
-              Contact
+              {t('common.menu.contact')}
             </Link>
           </nav>
           
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-4">
+            <LanguageSwitcher />
             <Link href="/contact" onClick={closeMobileMenu}>
               <Button className="bg-primary hover:bg-primary/90 text-white rounded-md">
-                Get a Quote
+                {t('contact.form.submit')}
               </Button>
             </Link>
           </div>
@@ -108,37 +112,38 @@ const Header = () => {
               className={`font-medium ${location === '/' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
               onClick={closeMobileMenu}
             >
-              Home
+              {t('common.menu.home')}
             </Link>
             <Link href="/services"
               className={`font-medium ${location === '/services' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
               onClick={closeMobileMenu}
             >
-              Services
+              {t('common.menu.services')}
             </Link>
             <Link href="/portfolio"
               className={`font-medium ${location === '/portfolio' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
               onClick={closeMobileMenu}
             >
-              Portfolio
+              {t('common.menu.portfolio')}
             </Link>
             <Link href="/about"
               className={`font-medium ${location === '/about' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
               onClick={closeMobileMenu}
             >
-              About
+              {t('common.menu.about')}
             </Link>
             <Link href="/contact"
               className={`font-medium ${location === '/contact' ? 'text-primary bg-neutral-100' : 'text-neutral-800 hover:text-primary hover:bg-neutral-100'} px-3 py-2 rounded-md`}
               onClick={closeMobileMenu}
             >
-              Contact
+              {t('common.menu.contact')}
             </Link>
+            <LanguageSwitcher />
             <Link href="/contact"
               className="bg-primary hover:bg-primary/90 text-white font-medium py-2 px-4 rounded-md transition-colors text-center mt-2"
               onClick={closeMobileMenu}
             >
-              Get a Quote
+              {t('contact.form.submit')}
             </Link>
           </div>
         </div>

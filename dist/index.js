@@ -25,13 +25,15 @@ import { fileURLToPath } from "url";
 var __filename = fileURLToPath(import.meta.url);
 var __dirname = dirname(__filename);
 var vite_config_default = defineConfig({
-  base: "/crossgosoftware.github.io/",
-  // <-- Add your repo name
   plugins: [
     react(),
     runtimeErrorOverlay(),
     themePlugin(),
-    ...process.env.NODE_ENV !== "production" && process.env.REPL_ID !== void 0 ? [await import("@replit/vite-plugin-cartographer").then((m) => m.cartographer())] : []
+    ...process.env.NODE_ENV !== "production" && process.env.REPL_ID !== void 0 ? [
+      await import("@replit/vite-plugin-cartographer").then(
+        (m) => m.cartographer()
+      )
+    ] : []
   ],
   resolve: {
     alias: {
@@ -42,12 +44,8 @@ var vite_config_default = defineConfig({
   },
   root: path.resolve(__dirname, "client"),
   build: {
-    outDir: "dist/public",
-    // Explicitly sets the correct folder
-    rollupOptions: {
-      input: "/index.html"
-      // Make sure this is correct
-    }
+    outDir: path.resolve(__dirname, "dist/public"),
+    emptyOutDir: true
   }
 });
 
