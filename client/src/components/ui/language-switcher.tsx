@@ -7,6 +7,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { LANGUAGES } from '@/i18n';
 
 const LanguageSwitcher = () => {
   const { i18n, t } = useTranslation();
@@ -21,14 +22,22 @@ const LanguageSwitcher = () => {
         value={i18n.language}
         onValueChange={changeLanguage}
       >
-        <SelectTrigger className="w-[120px]">
+        <SelectTrigger className="w-[140px]">
           <SelectValue placeholder={t('common.language')} />
         </SelectTrigger>
         <SelectContent>
-          <SelectItem value="en">{t('common.language', { lng: 'en' })}</SelectItem>
-          <SelectItem value="zh_TW">{t('common.language', { lng: 'zh_TW' })}</SelectItem>
-          <SelectItem value="zh_CN">{t('common.language', { lng: 'zh_CN' })}</SelectItem>
-          <SelectItem value="ja">{t('common.language', { lng: 'ja' })}</SelectItem>
+          <SelectItem value={LANGUAGES.EN}>
+            {t('common.language', { lng: LANGUAGES.EN })}
+          </SelectItem>
+          <SelectItem value={LANGUAGES.ZH_CN}>
+            {t('common.language', { lng: LANGUAGES.ZH_CN })}
+          </SelectItem>
+          <SelectItem value={LANGUAGES.ZH_TW}>
+            {t('common.language', { lng: LANGUAGES.ZH_TW })}
+          </SelectItem>
+          <SelectItem value={LANGUAGES.JA}>
+            {t('common.language', { lng: LANGUAGES.JA })}
+          </SelectItem>
         </SelectContent>
       </Select>
     </div>

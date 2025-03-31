@@ -1,0 +1,246 @@
+{
+  "common": {
+    "language": "繁體中文",
+    "menu": {
+      "home": "首頁",
+      "about": "關於我們",
+      "services": "服務",
+      "portfolio": "作品集",
+      "contact": "聯繫我們"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "將創意轉化為技術解決方案",
+      "subtitle": "我們提供尖端軟件解決方案，幫助企業在數字時代蓬勃發展",
+      "cta": "開始使用"
+    },
+    "about": {
+      "title": "關於 CrossGo",
+      "description": "CrossGo 是一家領先的軟件開發公司，專注於定制軟件解決方案、跨平台開發、人工智能集成和對象跟踪技術。憑藉多年經驗，我們幫助企業將創意轉化為現實。"
+    },
+    "services": {
+      "title": "我們的服務",
+      "description": "我們提供廣泛的服務，幫助企業利用技術實現增長和創新",
+      "custom_software": {
+        "title": "定制軟件開發",
+        "description": "量身定制的軟件解決方案，旨在解決您獨特的業務需求和挑戰。",
+        "learn_more": "了解更多"
+      },
+      "cross_platform": {
+        "title": "跨平台開發",
+        "description": "構建可在多個平台和設備上無縫運行的應用程序。",
+        "learn_more": "了解更多"
+      },
+      "ai_integration": {
+        "title": "人工智能集成",
+        "description": "結合人工智能技術，為您的應用程序增添智能功能。",
+        "learn_more": "了解更多"
+      },
+      "object_tracking": {
+        "title": "對象跟踪",
+        "description": "用於實時應用中跟踪和監控對象的先進技術。",
+        "learn_more": "了解更多"
+      }
+    },
+    "features": {
+      "title": "為什麼選擇我們",
+      "expertise": {
+        "title": "技術專長",
+        "description": "我們的團隊由精通各種技術的高技能開發人員組成。"
+      },
+      "quality": {
+        "title": "質量保證",
+        "description": "我們遵循嚴格的測試程序，確保高質量的交付成果。"
+      },
+      "support": {
+        "title": "持續支持",
+        "description": "我們為所有解決方案提供持續的維護和支持。"
+      }
+    },
+    "cta": {
+      "title": "準備好轉變您的創意了嗎？",
+      "description": "立即聯繫我們，討論我們如何幫助您的企業通過我們的技術解決方案成長。",
+      "button": "聯繫我們"
+    }
+  },
+  "about": {
+    "title": "關於我們",
+    "main_paragraph": "我們是一家軟件公司，專注於提供現代技術解決方案，幫助企業優化工作流程，提升用戶體驗，並利用人工智能的力量。",
+    "mission": "在CrossGo，我們相信技術應該為人服務，而不是相反。我們的使命是創造直觀、強大的軟件，解決實際問題並產生有意義的影響。",
+    "experience": {
+      "years": "10+",
+      "text": "年卓越經驗"
+    },
+    "values": {
+      "innovation": {
+        "title": "創新",
+        "description": "我們不斷探索新技術和方法"
+      },
+      "collaboration": {
+        "title": "協作",
+        "description": "我們與客戶緊密合作以了解他們的需求"
+      },
+      "excellence": {
+        "title": "卓越",
+        "description": "我們在所有交付中追求質量"
+      }
+    },
+    "mission_statement": {
+      "title": "我們的使命",
+      "description": "提供創新可靠的軟件解決方案，幫助企業實現目標。"
+    },
+    "vision": {
+      "title": "我們的願景",
+      "description": "成為推動業務轉型的尖端技術解決方案的領先提供商。"
+    },
+    "team": {
+      "title": "我們的團隊",
+      "description": "認識我們成功背後的人才團隊。"
+    }
+  },
+  "services": {
+    "title": "我們的服務",
+    "description": "針對您業務需求的全面技術解決方案",
+    "custom_software": {
+      "title": "定制軟件開發",
+      "description": "我們構建量身定制的軟件解決方案，解決您特定的業務挑戰和需求。我們經驗豐富的開發團隊與您緊密合作，了解您的需求並創建能夠簡化運營和提高效率的應用程序。",
+      "benefits": [
+        "根據您的特定業務需求量身定制",
+        "隨著業務增長可擴展和適應",
+        "增強安全性和合規性",
+        "提高效率和生產力"
+      ]
+    },
+    "cross_platform": {
+      "title": "跨平台開發",
+      "description": "我們的跨平台開發服務使您能夠通過單一代碼庫覆蓋不同設備和平台的用戶。這種方法減少了開發時間和成本，同時確保了所有平台上的一致用戶體驗。",
+      "benefits": [
+        "減少開發時間和成本",
+        "跨平台一致的用戶體驗",
+        "更容易維護和更新",
+        "更廣闊的市場覆蓋"
+      ]
+    },
+    "ai_integration": {
+      "title": "人工智能集成",
+      "description": "我們幫助企業利用人工智能的力量自動化流程、從數據中獲取見解並增強客戶體驗。我們的人工智能集成服務包括機器學習模型、自然語言處理和計算機視覺解決方案。",
+      "benefits": [
+        "自動化流程和工作流程",
+        "通過數據洞察增強決策",
+        "改善客戶體驗",
+        "預測分析功能"
+      ]
+    },
+    "object_tracking": {
+      "title": "對象跟踪",
+      "description": "我們先進的對象跟踪解決方案可以在各種應用中實時監控和分析對象。這種技術在物流、零售、安全和製造等跟踪資產和庫存至關重要的領域特別有用。",
+      "benefits": [
+        "實時監控資產和庫存",
+        "增強安全和監控",
+        "改善供應鏈可見性",
+        "減少損失和運營成本"
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "我們的作品集",
+    "description": "探索我們近期的項目和成功案例",
+    "view_project": "查看項目",
+    "view_all": "查看所有項目",
+    "projects": {
+      "fashion": {
+        "title": "時尚零售平台",
+        "description": "具有AI驅動推薦和視覺搜索功能的多平台購物體驗。"
+      },
+      "surveillance": {
+        "title": "智能監控系統",
+        "description": "具有實時對象跟踪和行為分析功能的智能安全解決方案。"
+      },
+      "medical": {
+        "title": "醫療診斷助手",
+        "description": "一種AI驅動的工具，幫助醫療專業人員分析醫學圖像並診斷疾病。"
+      }
+    },
+    "tags": {
+      "cross_platform": "跨平台應用",
+      "ecommerce": "電子商務",
+      "object_tracking": "對象跟踪",
+      "security": "安全",
+      "ai": "AI集成",
+      "healthcare": "醫療保健"
+    }
+  },
+  "contact": {
+    "title": "聯繫我們",
+    "description": "準備將您的想法轉變為技術解決方案了嗎？請聯繫我們，討論您的項目或了解我們的服務。",
+    "getInTouch": "聯繫我們",
+    "address": {
+      "title": "地址",
+      "value": "美國加利福尼亞州科技谷創新大道123號，郵編94025"
+    },
+    "email": {
+      "title": "電子郵件",
+      "value": "crossgosoftwaresolution@gmail.com"
+    },
+    "phone": {
+      "title": "電話",
+      "value": "+1 (555) 123-4567"
+    },
+    "form": {
+      "name": "姓名",
+      "yourName": "您的姓名",
+      "email": "電子郵件",
+      "yourEmail": "您的電子郵件",
+      "phone": "電話",
+      "yourPhone": "您的電話（可選）",
+      "company": "公司",
+      "yourCompany": "您的公司（可選）",
+      "subject": "主題",
+      "selectSubject": "選擇主題",
+      "message": "留言",
+      "yourMessage": "您的留言",
+      "sending": "發送中...",
+      "sendMessage": "發送消息",
+      "submit": "索取報價",
+      "subjects": {
+        "generalInquiry": "一般咨詢",
+        "customSoftware": "定制軟件開發",
+        "crossPlatform": "跨平台開發",
+        "aiIntegration": "人工智能集成",
+        "objectTracking": "對象跟踪",
+        "other": "其他"
+      }
+    },
+    "successMessage": {
+      "title": "消息發送成功！",
+      "description": "感謝您聯繫CrossGo。我們已收到您的消息，並將盡快回复您。"
+    },
+    "toast": {
+      "success": {
+        "title": "消息已發送！",
+        "description": "感謝您的留言。我們會盡快回复您。"
+      },
+      "error": {
+        "title": "錯誤",
+        "description": "發送您的消息失敗。請稍後再試。",
+        "unexpectedError": "發生意外錯誤。請稍後再試。"
+      }
+    },
+    "info": {
+      "title": "聯繫信息",
+      "address": "地址",
+      "phone": "電話",
+      "email": "電子郵件"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 CrossGo。保留所有權利。",
+    "social": {
+      "follow": "關注我們"
+    },
+    "links": {
+      "title": "快速鏈接"
+    }
+  }
+}
