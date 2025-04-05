@@ -6,40 +6,40 @@
       "about": "關於我們",
       "services": "服務",
       "portfolio": "作品集",
-      "contact": "聯繫我們"
+      "contact": "聯絡我們"
     }
   },
   "home": {
     "hero": {
-      "title": "將創意轉化為技術解決方案",
-      "subtitle": "我們提供尖端軟件解決方案，幫助企業在數字時代蓬勃發展",
-      "cta": "開始使用"
+      "title": "將想法轉化為技術解決方案",
+      "subtitle": "我們提供尖端的軟體解決方案，幫助企業在數位時代蓬勃發展",
+      "cta": "開始"
     },
     "about": {
       "title": "關於 CrossGo",
-      "description": "CrossGo 是一家領先的軟件開發公司，專注於定制軟件解決方案、跨平台開發、人工智能集成和對象跟踪技術。憑藉多年經驗，我們幫助企業將創意轉化為現實。"
+      "description": "CrossGo 是一家領先的軟體開發公司，專門從事客製化軟體解決方案、跨平台開發、人工智慧整合和物件追蹤技術。憑藉多年的經驗，我們幫助企業將他們的想法變為現實。"
     },
     "services": {
       "title": "我們的服務",
-      "description": "我們提供廣泛的服務，幫助企業利用技術實現增長和創新",
+      "description": "我們提供廣泛的服務，以幫助企業利用技術實現成長和創新",
       "custom_software": {
-        "title": "定制軟件開發",
-        "description": "量身定制的軟件解決方案，旨在解決您獨特的業務需求和挑戰。",
+        "title": "全端 Web 開發",
+        "description": "從前端到後端，我們構建安全、可擴展的 Web 應用程式，以滿足您的業務需求。",
         "learn_more": "了解更多"
       },
       "cross_platform": {
         "title": "跨平台開發",
-        "description": "構建可在多個平台和設備上無縫運行的應用程序。",
+        "description": "構建可在 Windows、macOS、Linux、iOS 和 Android 上無縫運行的應用程式。",
         "learn_more": "了解更多"
       },
       "ai_integration": {
-        "title": "人工智能集成",
-        "description": "結合人工智能技術，為您的應用程序增添智能功能。",
+        "title": "AI 和 LLM 整合",
+        "description": "AI 聊天機器人、視覺系統和設備上的 LLM，以增強自動化、個人化和離線智慧。",
         "learn_more": "了解更多"
       },
       "object_tracking": {
-        "title": "對象跟踪",
-        "description": "用於實時應用中跟踪和監控對象的先進技術。",
+        "title": "AR 和物件追蹤",
+        "description": "適用於行動裝置、Meta Quest 和 Apple Vision Pro 的 2D 追蹤和 AR 解決方案，從而實現互動式和沉浸式體驗。",
         "learn_more": "了解更多"
       }
     },
@@ -47,30 +47,30 @@
       "title": "為什麼選擇我們",
       "expertise": {
         "title": "技術專長",
-        "description": "我們的團隊由精通各種技術的高技能開發人員組成。"
+        "description": "我們的團隊由在各種技術領域擁有專業知識的熟練開發人員組成。"
       },
       "quality": {
-        "title": "質量保證",
-        "description": "我們遵循嚴格的測試程序，確保高質量的交付成果。"
+        "title": "品質保證",
+        "description": "我們遵循嚴格的測試程序，以確保高品質的交付成果。"
       },
       "support": {
-        "title": "持續支持",
-        "description": "我們為所有解決方案提供持續的維護和支持。"
+        "title": "持續支援",
+        "description": "我們為所有解決方案提供持續的維護和支援。"
       }
     },
     "cta": {
-      "title": "準備好轉變您的創意了嗎？",
-      "description": "立即聯繫我們，討論我們如何幫助您的企業通過我們的技術解決方案成長。",
-      "button": "聯繫我們"
+      "title": "準備好改變您的想法了嗎？",
+      "description": "立即聯絡我們，討論我們如何通過我們的技術解決方案幫助您的業務成長。",
+      "button": "聯絡我們"
     }
   },
   "about": {
     "title": "關於我們",
-    "main_paragraph": "我們是一家軟件公司，專注於提供現代技術解決方案，幫助企業優化工作流程，提升用戶體驗，並利用人工智能的力量。",
-    "mission": "在CrossGo，我們相信技術應該為人服務，而不是相反。我們的使命是創造直觀、強大的軟件，解決實際問題並產生有意義的影響。",
+    "main_paragraph": "我們是一家軟體公司，專門提供現代技術解決方案，幫助企業優化工作流程、增強使用者體驗並利用人工智慧的力量。",
+    "mission": "在 CrossGo，我們認為技術應該為人服務，而不是相反。我們的使命是創建直觀、強大的軟體，解決實際問題並產生有意義的影響。",
     "experience": {
       "years": "10+",
-      "text": "年卓越經驗"
+      "text": "多年的卓越表現"
     },
     "values": {
       "innovation": {
@@ -78,17 +78,17 @@
         "description": "我們不斷探索新技術和方法"
       },
       "collaboration": {
-        "title": "協作",
-        "description": "我們與客戶緊密合作以了解他們的需求"
+        "title": "合作",
+        "description": "我們與客戶密切合作，以了解他們的需求"
       },
       "excellence": {
         "title": "卓越",
-        "description": "我們在所有交付中追求質量"
+        "description": "我們力求在交付的每一件事中都做到高品質"
       }
     },
     "mission_statement": {
       "title": "我們的使命",
-      "description": "提供創新可靠的軟件解決方案，幫助企業實現目標。"
+      "description": "提供創新和可靠的軟體解決方案，使企業能夠實現其目標。"
     },
     "vision": {
       "title": "我們的願景",
@@ -96,88 +96,88 @@
     },
     "team": {
       "title": "我們的團隊",
-      "description": "認識我們成功背後的人才團隊。"
+      "description": "認識我們成功背後的才華橫溢的個人。"
     }
   },
   "services": {
     "title": "我們的服務",
-    "description": "針對您業務需求的全面技術解決方案",
+    "description": "根據您的業務需求量身定制的綜合技術解決方案",
     "custom_software": {
-      "title": "定制軟件開發",
-      "description": "我們構建量身定制的軟件解決方案，解決您特定的業務挑戰和需求。我們經驗豐富的開發團隊與您緊密合作，了解您的需求並創建能夠簡化運營和提高效率的應用程序。",
+      "title": "全端 Web 開發",
+      "description": "我們提供具有響應式前端、強大後端和安全基礎設施的現代 Web 應用程式。從儀表板到電子商務平台，我們處理整個 Web 堆疊。",
       "benefits": [
-        "根據您的特定業務需求量身定制",
-        "隨著業務增長可擴展和適應",
-        "增強安全性和合規性",
-        "提高效率和生產力"
+        "完整的前端和後端開發",
+        "安全且可擴展的架構",
+        "針對效能和使用者體驗進行了優化",
+        "易於維護和擴展的程式碼庫"
       ]
     },
     "cross_platform": {
       "title": "跨平台開發",
-      "description": "我們的跨平台開發服務使您能夠通過單一代碼庫覆蓋不同設備和平台的用戶。這種方法減少了開發時間和成本，同時確保了所有平台上的一致用戶體驗。",
+      "description": "一次開發，隨處部署。我們的跨平台應用程式可在 Windows、macOS、Linux、iOS 和 Android 上無縫運行，並具有一致的 UI 和效能。",
       "benefits": [
-        "減少開發時間和成本",
-        "跨平台一致的用戶體驗",
-        "更容易維護和更新",
-        "更廣闊的市場覆蓋"
+        "適用於多個平台的統一程式碼庫",
+        "更快的上市時間",
+        "跨設備的一致 UI/UX",
+        "降低長期維護成本"
       ]
     },
     "ai_integration": {
-      "title": "人工智能集成",
-      "description": "我們幫助企業利用人工智能的力量自動化流程、從數據中獲取見解並增強客戶體驗。我們的人工智能集成服務包括機器學習模型、自然語言處理和計算機視覺解決方案。",
+      "title": "AI 和 LLM 整合",
+      "description": "我們整合了 AI 功能，例如根據您的業務資料訓練的聊天機器人、離線 LLM、用於缺陷檢測的電腦視覺以及用於自動化的語音轉文字。",
       "benefits": [
-        "自動化流程和工作流程",
-        "通過數據洞察增強決策",
-        "改善客戶體驗",
-        "預測分析功能"
+        "根據您的平台（FB、TikTok、Shopee、Line 等）量身定制的聊天機器人",
+        "使用您自己的資料在本機運行的 LLM",
+        "用於即時缺陷檢測的 AI 視覺系統",
+        "用於自動化和可訪問性的音訊轉文字"
       ]
     },
     "object_tracking": {
-      "title": "對象跟踪",
-      "description": "我們先進的對象跟踪解決方案可以在各種應用中實時監控和分析對象。這種技術在物流、零售、安全和製造等跟踪資產和庫存至關重要的領域特別有用。",
+      "title": "AR 和物件追蹤",
+      "description": "我們為所有支援攝影機的設備構建高級 AR 體驗和 2D 追蹤解決方案，包括 Meta Quest 和 Apple Vision Pro 等可穿戴設備。",
       "benefits": [
-        "實時監控資產和庫存",
-        "增強安全和監控",
-        "改善供應鏈可見性",
-        "減少損失和運營成本"
+        "使用 2D 追蹤的跨設備 AR 解決方案",
+        "支援 Android、iOS、Meta Quest 和 Apple Vision Pro",
+        "增強了行銷、培訓和教育的互動性",
+        "與現有系統無縫整合"
       ]
     }
   },
   "portfolio": {
     "title": "我們的作品集",
-    "description": "探索我們近期的項目和成功案例",
-    "view_project": "查看項目",
-    "view_all": "查看所有項目",
+    "description": "探索我們最近的一些專案和成功案例",
+    "view_project": "查看專案",
+    "view_all": "查看所有專案",
     "projects": {
       "fashion": {
         "title": "時尚零售平台",
-        "description": "具有AI驅動推薦和視覺搜索功能的多平台購物體驗。"
+        "description": "具有 AI 驅動的推薦和視覺搜尋的多平台購物體驗。"
       },
       "surveillance": {
-        "title": "智能監控系統",
-        "description": "具有實時對象跟踪和行為分析功能的智能安全解決方案。"
+        "title": "智慧監控系統",
+        "description": "具有即時物件追蹤和行為分析的智慧安全解決方案。"
       },
       "medical": {
         "title": "醫療診斷助手",
-        "description": "一種AI驅動的工具，幫助醫療專業人員分析醫學圖像並診斷疾病。"
+        "description": "一種 AI 驅動的工具，可幫助醫療保健專業人員分析醫學影像並診斷病情。"
       }
     },
     "tags": {
       "cross_platform": "跨平台應用",
       "ecommerce": "電子商務",
-      "object_tracking": "對象跟踪",
+      "object_tracking": "物件追蹤",
       "security": "安全",
-      "ai": "AI集成",
+      "ai": "人工智慧整合",
       "healthcare": "醫療保健"
     }
   },
   "contact": {
-    "title": "聯繫我們",
-    "description": "準備將您的想法轉變為技術解決方案了嗎？請聯繫我們，討論您的項目或了解我們的服務。",
-    "getInTouch": "聯繫我們",
+    "title": "聯絡我們",
+    "description": "準備好將您的想法轉化為技術解決方案了嗎？請聯絡我們，討論您的專案或了解更多關於我們服務的資訊。",
+    "getInTouch": "聯絡我們",
     "address": {
       "title": "地址",
-      "value": "美國加利福尼亞州科技谷創新大道123號，郵編94025"
+      "value": "123 Innovation Drive, Tech Valley, CA 94025"
     },
     "email": {
       "title": "電子郵件",
@@ -196,51 +196,51 @@
       "yourPhone": "您的電話（可選）",
       "company": "公司",
       "yourCompany": "您的公司（可選）",
-      "subject": "主題",
-      "selectSubject": "選擇主題",
-      "message": "留言",
-      "yourMessage": "您的留言",
-      "sending": "發送中...",
-      "sendMessage": "發送消息",
-      "submit": "索取報價",
+      "subject": "主旨",
+      "selectSubject": "選擇主旨",
+      "message": "訊息",
+      "yourMessage": "您的訊息",
+      "sending": "傳送中...",
+      "sendMessage": "傳送訊息",
+      "submit": "請求定價",
       "subjects": {
-        "generalInquiry": "一般咨詢",
-        "customSoftware": "定制軟件開發",
+        "generalInquiry": "一般諮詢",
+        "customSoftware": "客製化軟體開發",
         "crossPlatform": "跨平台開發",
-        "aiIntegration": "人工智能集成",
-        "objectTracking": "對象跟踪",
+        "aiIntegration": "人工智慧整合",
+        "objectTracking": "物件追蹤",
         "other": "其他"
       }
     },
     "successMessage": {
-      "title": "消息發送成功！",
-      "description": "感謝您聯繫CrossGo。我們已收到您的消息，並將盡快回复您。"
+      "title": "訊息已成功傳送！",
+      "description": "感謝您聯絡 CrossGo。我們已收到您的訊息，並將儘快回覆您。"
     },
     "toast": {
       "success": {
-        "title": "消息已發送！",
-        "description": "感謝您的留言。我們會盡快回复您。"
+        "title": "訊息已傳送！",
+        "description": "感謝您的留言。我們會儘快回覆您。"
       },
       "error": {
         "title": "錯誤",
-        "description": "發送您的消息失敗。請稍後再試。",
+        "description": "傳送訊息失敗。請稍後再試。",
         "unexpectedError": "發生意外錯誤。請稍後再試。"
       }
     },
     "info": {
-      "title": "聯繫信息",
+      "title": "聯絡資訊",
       "address": "地址",
       "phone": "電話",
       "email": "電子郵件"
     }
   },
   "footer": {
-    "copyright": "© 2025 CrossGo。保留所有權利。",
+    "copyright": "© 2025 CrossGo。版權所有。",
     "social": {
       "follow": "關注我們"
     },
     "links": {
-      "title": "快速鏈接"
+      "title": "快速連結"
     }
   }
 }

@@ -23,23 +23,23 @@
       "title": "Our Services",
       "description": "We offer a wide range of services to help businesses leverage technology for growth and innovation",
       "custom_software": {
-        "title": "Custom Software Development",
-        "description": "Tailored software solutions designed to address your unique business needs and challenges.",
+        "title": "Full-Stack Web Development",
+        "description": "From front-end to back-end, we build secure, scalable web applications tailored to your business needs.",
         "learn_more": "Learn More"
       },
       "cross_platform": {
         "title": "Cross-Platform Development",
-        "description": "Build applications that work seamlessly across multiple platforms and devices.",
+        "description": "Build applications that work seamlessly across Windows, macOS, Linux, iOS, and Android.",
         "learn_more": "Learn More"
       },
       "ai_integration": {
-        "title": "AI Integration",
-        "description": "Incorporate artificial intelligence to enhance your applications with smart capabilities.",
+        "title": "AI & LLM Integration",
+        "description": "AI chatbots, vision systems, and on-device LLMs to enhance automation, personalization, and offline intelligence.",
         "learn_more": "Learn More"
       },
       "object_tracking": {
-        "title": "Object Tracking",
-        "description": "Advanced technologies for tracking and monitoring objects in real-time applications.",
+        "title": "AR & Object Tracking",
+        "description": "2D tracking and AR solutions for mobile, Meta Quest, and Apple Vision Pro, enabling interactive and immersive experiences.",
         "learn_more": "Learn More"
       }
     },
@@ -103,43 +103,43 @@
     "title": "Our Services",
     "description": "Comprehensive technology solutions tailored to your business needs",
     "custom_software": {
-      "title": "Custom Software Development",
-      "description": "We build tailored software solutions that address your specific business challenges and requirements. Our experienced development team works closely with you to understand your needs and create applications that streamline your operations and improve efficiency.",
+      "title": "Full-Stack Web Development",
+      "description": "We deliver modern web applications with responsive frontends, robust backends, and secure infrastructure. From dashboards to ecommerce platforms, we handle the entire web stack.",
       "benefits": [
-        "Tailored to your specific business needs",
-        "Scalable and adaptable as your business grows",
-        "Enhanced security and compliance",
-        "Improved efficiency and productivity"
+        "Complete frontend and backend development",
+        "Secure and scalable architecture",
+        "Optimized for performance and UX",
+        "Easily maintainable and extendable codebase"
       ]
     },
     "cross_platform": {
       "title": "Cross-Platform Development",
-      "description": "Our cross-platform development services enable you to reach users across different devices and platforms with a single codebase. This approach reduces development time and costs while ensuring a consistent user experience across all platforms.",
+      "description": "Develop once, deploy everywhere. Our cross-platform apps run seamlessly on Windows, macOS, Linux, iOS, and Android with consistent UI and performance.",
       "benefits": [
-        "Reduced development time and costs",
-        "Consistent user experience across platforms",
-        "Easier maintenance and updates",
-        "Broader market reach"
+        "Unified codebase for multiple platforms",
+        "Faster time to market",
+        "Consistent UI/UX across devices",
+        "Reduced long-term maintenance cost"
       ]
     },
     "ai_integration": {
-      "title": "AI Integration",
-      "description": "We help businesses leverage the power of artificial intelligence to automate processes, gain insights from data, and enhance customer experiences. Our AI integration services include machine learning models, natural language processing, and computer vision solutions.",
+      "title": "AI & LLM Integration",
+      "description": "We integrate AI features like chatbots trained on your business data, offline LLMs, computer vision for defect detection, and speech-to-text for automation.",
       "benefits": [
-        "Automated processes and workflows",
-        "Enhanced decision-making with data insights",
-        "Improved customer experiences",
-        "Predictive analytics capabilities"
+        "Chatbots tailored to your platforms (FB, TikTok, Shopee, Line, etc.)",
+        "LLMs running locally with your own data",
+        "AI vision systems for real-time defect detection",
+        "Audio-to-text for automation and accessibility"
       ]
     },
     "object_tracking": {
-      "title": "Object Tracking",
-      "description": "Our advanced object tracking solutions enable real-time monitoring and analysis of objects in various applications. This technology is particularly useful in logistics, retail, security, and manufacturing sectors where tracking assets and inventory is critical.",
+      "title": "AR & Object Tracking",
+      "description": "We build advanced AR experiences and 2D tracking solutions for all camera-enabled devices, including wearables like Meta Quest and Apple Vision Pro.",
       "benefits": [
-        "Real-time monitoring of assets and inventory",
-        "Enhanced security and surveillance",
-        "Improved supply chain visibility",
-        "Reduced losses and operational costs"
+        "Cross-device AR solutions using 2D tracking",
+        "Supports Android, iOS, Meta Quest, and Apple Vision Pro",
+        "Enhanced interactivity for marketing, training, and education",
+        "Seamless integration with existing systems"
       ]
     }
   },
