@@ -13,7 +13,7 @@ const HomePage = () => {
   const { t } = useTranslation();
   const services = [
     {
-      icon: "fas fa-laptop-code",
+      icon: "fas fa-globe",
       title: t('home.services.custom_software.title'),
       description: t('home.services.custom_software.description'),
       link: "#custom-development"
@@ -31,7 +31,7 @@ const HomePage = () => {
       link: "#ai-integration"
     },
     {
-      icon: "fas fa-eye",
+      icon: "fas fa-glasses",
       title: t('home.services.object_tracking.title'),
       description: t('home.services.object_tracking.description'),
       link: "#object-tracking"
