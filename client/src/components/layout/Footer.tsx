@@ -15,22 +15,8 @@ const Footer = () => {
               <span className="text-xl font-bold font-inter">CrossGo</span>
             </div>
             <p className="text-neutral-400 mb-6">
-              Transforming Ideas into Technology Solutions. We help businesses optimize workflows, enhance user experience, and leverage the power of AI.
+              We help businesses optimize workflows, enhance user experience, and leverage the power of AI.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" className="text-neutral-400 hover:text-white transition-colors">
-                <i className="fab fa-github"></i>
-              </a>
-            </div>
           </div>
           
           <div>
@@ -47,10 +33,10 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold font-inter mb-6">Our Services</h3>
             <ul className="space-y-3">
-              <li><Link href="/services#custom-development" className="text-neutral-400 hover:text-white transition-colors">Custom Software Development</Link></li>
+              <li><Link href="/services#custom-development" className="text-neutral-400 hover:text-white transition-colors">Full-Stack Web Development</Link></li>
               <li><Link href="/services#cross-platform" className="text-neutral-400 hover:text-white transition-colors">Cross-Platform Development</Link></li>
-              <li><Link href="/services#ai-integration" className="text-neutral-400 hover:text-white transition-colors">AI Integration</Link></li>
-              <li><Link href="/services#object-tracking" className="text-neutral-400 hover:text-white transition-colors">Object Tracking</Link></li>
+              <li><Link href="/services#ai-integration" className="text-neutral-400 hover:text-white transition-colors">AI & LLM Integration</Link></li>
+              <li><Link href="/services#object-tracking" className="text-neutral-400 hover:text-white transition-colors">AR & Object Tracking</Link></li>
             </ul>
           </div>
           
@@ -59,15 +45,15 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <i className="fas fa-map-marker-alt mt-1 mr-3 text-neutral-400"></i>
-                <span className="text-neutral-400">Your Location</span>
+                <span className="text-neutral-400">CT3 Ori Garden Building, lienchieu, da nang, Vietnam</span>
               </li>
               <li className="flex items-start">
                 <i className="fas fa-envelope mt-1 mr-3 text-neutral-400"></i>
-                <span className="text-neutral-400">info@crossgosoftware.github.io</span>
+                <span className="text-neutral-400">crossgosoftwaresolution@gmail.com</span>
               </li>
               <li className="flex items-start">
                 <i className="fas fa-phone-alt mt-1 mr-3 text-neutral-400"></i>
-                <span className="text-neutral-400">Your Phone Number</span>
+                <span className="text-neutral-400">(+84) 0899248136</span>
               </li>
             </ul>
           </div>

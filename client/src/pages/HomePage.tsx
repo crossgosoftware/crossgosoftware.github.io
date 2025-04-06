@@ -8,9 +8,30 @@ import ProjectCard from "@/components/ui/project-card";
 import ContactForm from "@/components/ui/contact-form";
 import { scrollToSection } from "@/lib/utils";
 import { useTranslation } from "react-i18next";
+import EnglishImage from "../Assets/Images/English.png";
+import JapaneseImage from "../Assets/Images/Japanese.png";
+import SimpChineseImage from "../Assets/Images/SimpChinese.png";
+import TradChineseImage from "../Assets/Images/TradChinese.png";
 
 const HomePage = () => {
   const { t } = useTranslation();
+  const language = t('common.language'); // Get the current language
+
+  // Use the correct imported image based on language
+  const getLanguageImage = () => {
+    switch(language) {
+      case 'English':
+        return EnglishImage;
+      case '日本語':
+        return JapaneseImage;
+      case '简体中文':
+        return SimpChineseImage;
+        case '繁體中文':
+          return TradChineseImage;
+      default:
+        return EnglishImage;
+    }
+  };
   const services = [
     {
       icon: "fas fa-globe",
@@ -405,19 +426,12 @@ const HomePage = () => {
                   </div>
                 </div>
                 
-                <div className="flex space-x-4">
-                  <a href="#" className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white hover:bg-primary-dark transition-colors">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white hover:bg-primary-dark transition-colors">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white hover:bg-primary-dark transition-colors">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white hover:bg-primary-dark transition-colors">
-                    <i className="fab fa-github"></i>
-                  </a>
+                <div className="flex justify-center items-center">
+                  <img
+                    src={getLanguageImage()}
+                    alt="QR Code"
+                    className="w-40 h-40 object-contain"
+                  />
                 </div>
               </div>
               
