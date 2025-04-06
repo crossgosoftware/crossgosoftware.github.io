@@ -17,38 +17,25 @@ const ServiceCard = ({ icon, title, description, link }: ServiceCardProps) => {
 
   return (
     <div className="service-card bg-white rounded-xl shadow-md hover:shadow-lg p-6 flex flex-col items-center text-center">
-      <div className="w-16 h-16 rounded-full bg-primary-light/10 flex items-center justify-center mb-4 relative">
+      <div className="w-32 h-32 bg-primary-light/10 rounded-lg mb-4 relative overflow-hidden">
         {Array.isArray(icon) ? (
-          <div className="relative w-full h-full flex items-center justify-center">
-            {/* Main icon in the center */}
-            <i className={`${icon[0]} text-2xl text-primary`}></i>
-
-            {/* Additional icons positioned around the main icon */}
-            {icon.length > 1 && (
-              <>
-                {icon.slice(1).map((iconClass, index) => {
-                  // Calculate position for each additional icon
-                  const angle = (index * (360 / (icon.length - 1))) * (Math.PI / 180);
-                  const top = 50 + 35 * Math.sin(angle);
-                  const left = 50 + 35 * Math.cos(angle);
-
-                  return (
-                    <i
-                      key={index}
-                      className={`${iconClass} text-sm text-primary absolute`}
-                      style={{
-                        top: `${top}%`,
-                        left: `${left}%`,
-                        transform: 'translate(-50%, -50%)'
-                      }}
-                    ></i>
-                  );
-                })}
-              </>
-            )}
+          <div className="w-full h-full flex items-center justify-center">
+            {/* Display two icons side by side */}
+            <div className="flex space-x-4">
+              {icon.slice(0, 2).map((iconClass, index) => (
+                <div
+                  key={index}
+                  className="bg-white rounded-full w-14 h-14 flex items-center justify-center shadow-sm"
+                >
+                  <i className={`${iconClass} text-3xl text-primary`}></i>
+                </div>
+              ))}
+            </div>
           </div>
         ) : (
-          <i className={`${icon} text-2xl text-primary`}></i>
+          <div className="w-full h-full flex items-center justify-center">
+            <i className={`${icon} text-4xl text-primary`}></i>
+          </div>
         )}
       </div>
       <h3 className="text-xl font-bold font-inter text-neutral-900 mb-3">{title}</h3>

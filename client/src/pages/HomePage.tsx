@@ -34,25 +34,25 @@ const HomePage = () => {
   };
   const services = [
     {
-      icon: ["fab fa-firefox-browser", "fab fa-chrome", "fab fa-safari", "fab fa-edge"],
+      icon: ["fab fa-chrome", "fab fa-safari"],
       title: t('home.services.custom_software.title'),
       description: t('home.services.custom_software.description'),
       link: "#web-development"
     },
     {
-      icon: ["fab fa-android", "fab fa-apple", "fab fa-windows", "fab fa-linux"],
+      icon: ["fab fa-apple", "fab fa-windows"],
       title: t('home.services.cross_platform.title'),
       description: t('home.services.cross_platform.description'),
       link: "#cross-platform"
     },
     {
-      icon: ["fas fa-brain", "fas fa-eye", "fab fa-openai", "fas fa-microchip"],
+      icon: ["fas fa-brain", "fas fa-eye"],
       title: t('home.services.ai_integration.title'),
       description: t('home.services.ai_integration.description'),
       link: "#ai-integration"
     },
     {
-      icon: ["fas fa-vr-cardboard", "fas fa-cube", "fas fa-camera", "fas fa-map-marker-alt"],
+      icon: ["fas fa-vr-cardboard", "fas fa-cube"],
       title: t('home.services.object_tracking.title'),
       description: t('home.services.object_tracking.description'),
       link: "#object-tracking"
