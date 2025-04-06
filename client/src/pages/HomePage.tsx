@@ -34,25 +34,25 @@ const HomePage = () => {
   };
   const services = [
     {
-      icon: "fas fa-globe",
+      icon: ["fab fa-firefox-browser", "fab fa-chrome", "fab fa-safari", "fab fa-edge"],
       title: t('home.services.custom_software.title'),
       description: t('home.services.custom_software.description'),
-      link: "#custom-development"
+      link: "#web-development"
     },
     {
-      icon: "fas fa-mobile-alt",
+      icon: ["fab fa-android", "fab fa-apple", "fab fa-windows", "fab fa-linux"],
       title: t('home.services.cross_platform.title'),
       description: t('home.services.cross_platform.description'),
       link: "#cross-platform"
     },
     {
-      icon: "fas fa-brain",
+      icon: ["fas fa-brain", "fas fa-eye", "fab fa-openai", "fas fa-microchip"],
       title: t('home.services.ai_integration.title'),
       description: t('home.services.ai_integration.description'),
       link: "#ai-integration"
     },
     {
-      icon: "fas fa-glasses",
+      icon: ["fas fa-vr-cardboard", "fas fa-cube", "fas fa-camera", "fas fa-map-marker-alt"],
       title: t('home.services.object_tracking.title'),
       description: t('home.services.object_tracking.description'),
       link: "#object-tracking"
@@ -165,7 +165,7 @@ const HomePage = () => {
       {/* Detailed Services Section */}
       <section className="py-16 bg-neutral-50">
         <Container>
-          <div id="custom-development" className="mb-20">
+          <div id="web-development" className="mb-20">
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div className="order-2 md:order-1">
                 <h2 className="text-2xl md:text-3xl font-bold font-inter text-neutral-900 mb-4">{t('home.services.custom_software.title')}</h2>
