@@ -12,6 +12,10 @@ import EnglishImage from "../Assets/Images/English.png";
 import JapaneseImage from "../Assets/Images/Japanese.png";
 import SimpChineseImage from "../Assets/Images/SimpChinese.png";
 import TradChineseImage from "../Assets/Images/TradChinese.png";
+import WebDevelopmentImage from "../Assets/Images/WebDevelopment.png";
+import CrossPlatformImage from "../Assets/Images/CrossPlatform.png";
+import AIIntegrationImage from "../Assets/Images/AIIntegration.png";
+import ObjectTrackingImage from "../Assets/Images/ObjectTracking.png";
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -183,7 +187,7 @@ const HomePage = () => {
               </div>
               <div className="order-1 md:order-2">
                 <img 
-                  src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                  src= {WebDevelopmentImage} 
                   alt="Team collaborating on software development" 
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
@@ -195,7 +199,7 @@ const HomePage = () => {
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                  src={CrossPlatformImage}
                   alt="Cross-platform applications on different devices" 
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
@@ -247,7 +251,7 @@ const HomePage = () => {
             <div className="grid md:grid-cols-2 gap-10 items-center">
               <div>
                 <img 
-                  src="https://images.unsplash.com/photo-1563396983906-b3795482a59a?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+                  src={ObjectTrackingImage}
                   alt="Object tracking and recognition" 
                   className="rounded-lg shadow-lg w-full h-auto"
                 />
