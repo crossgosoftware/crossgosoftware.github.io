@@ -36,7 +36,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-neutral-900 mb-1">Address</h3>
-                      <p className="text-neutral-600">Your Location</p>
+                      <p className="text-neutral-600">CT3 Ori Garden Building, lienchieu, da nang, Vietnam</p>
                     </div>
                   </div>
                   
@@ -46,7 +46,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-neutral-900 mb-1">Email</h3>
-                      <p className="text-neutral-600">info@crossgosoftware.github.io</p>
+                      <p className="text-neutral-600">crossgosoftwaresolution@gmail.com</p>
                     </div>
                   </div>
                   
@@ -56,7 +56,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-neutral-900 mb-1">Phone</h3>
-                      <p className="text-neutral-600">Your Phone Number</p>
+                      <p className="text-neutral-600">(+84)0899248136</p>
                     </div>
                   </div>
 
