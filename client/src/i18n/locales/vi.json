@@ -1,0 +1,67 @@
+{
+  "common": {
+    "language": "Tiếng Việt",
+    "menu": {
+      "home": "Trang Chủ",
+      "about": "Giới Thiệu",
+      "services": "Dịch Vụ",
+      "portfolio": "Dự Án",
+      "contact": "Liên Hệ"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Biến Ý Tưởng Thành Giải Pháp Công Nghệ",
+      "subtitle": "Chúng tôi cung cấp các giải pháp phần mềm tiên tiến giúp doanh nghiệp phát triển trong kỷ nguyên số",
+      "cta": "Bắt Đầu Ngay"
+    },
+    "about": {
+      "title": "Về CrossGo",
+      "description": "CrossGo là công ty phát triển phần mềm hàng đầu chuyên cung cấp các giải pháp phần mềm tùy chỉnh, phát triển đa nền tảng, tích hợp AI và công nghệ theo dõi đối tượng. Với nhiều năm kinh nghiệm, chúng tôi giúp doanh nghiệp biến ý tưởng thành hiện thực."
+    },
+    "services": {
+      "title": "Dịch Vụ Của Chúng Tôi",
+      "description": "Chúng tôi cung cấp nhiều dịch vụ để giúp doanh nghiệp tận dụng công nghệ cho sự phát triển và đổi mới",
+      "custom_software": {
+        "title": "Phát Triển Web Full-Stack",
+        "description": "Từ front-end đến back-end, chúng tôi xây dựng các ứng dụng web an toàn, có thể mở rộng, phù hợp với nhu cầu kinh doanh của bạn.",
+        "learn_more": "Tìm Hiểu Thêm"
+      },
+      "cross_platform": {
+        "title": "Phát Triển Đa Nền Tảng",
+        "description": "Xây dựng các ứng dụng hoạt động mượt mà trên Windows, macOS, Linux, iOS và Android.",
+        "learn_more": "Tìm Hiểu Thêm"
+      },
+      "ai_integration": {
+        "title": "Tích Hợp AI & LLM",
+        "description": "Chatbot AI, hệ thống thị giác và LLM trên thiết bị để tăng cường tự động hóa, cá nhân hóa và trí tuệ ngoại tuyến.",
+        "learn_more": "Tìm Hiểu Thêm"
+      },
+      "object_tracking": {
+        "title": "AR & Theo Dõi Đối Tượng",
+        "description": "Giải pháp theo dõi 2D và AR cho di động, Meta Quest và Apple Vision Pro, mang lại trải nghiệm tương tác và sống động.",
+        "learn_more": "Tìm Hiểu Thêm"
+      }
+    },
+    "features": {
+      "title": "Tại Sao Chọn Chúng Tôi",
+      "expertise": {
+        "title": "Chuyên Môn Kỹ Thuật",
+        "description": "Đội ngũ của chúng tôi bao gồm các nhà phát triển có kỹ năng với chuyên môn trong nhiều công nghệ."
+      },
+      "quality": {
+        "title": "Đảm Bảo Chất Lượng",
+        "description": "Chúng tôi tuân thủ các quy trình kiểm tra nghiêm ngặt để đảm bảo sản phẩm chất lượng cao."
+      },
+      "support": {
+        "title": "Hỗ Trợ Liên Tục",
+        "description": "Chúng tôi cung cấp bảo trì và hỗ trợ liên tục cho tất cả các giải pháp của mình."
+      }
+    },
+    "cta": {
+      "title": "Sẵn Sàng Biến Ý Tưởng Thành Hiện Thực?",
+      "description": "Liên hệ với chúng tôi ngay hôm nay để thảo luận về cách chúng tôi có thể giúp doanh nghiệp của bạn phát triển với các giải pháp công nghệ của chúng tôi.",
+      "button": "Liên Hệ Ngay"
+    }
+  }
+}

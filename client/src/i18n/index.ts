@@ -7,13 +7,15 @@ import enTranslation from './locales/en.json';
 import zhCNTranslation from './locales/zh-CN.json';
 import zhTWTranslation from './locales/zh-TW.json';
 import jaTranslation from './locales/ja.json';
+import viTranslation from './locales/vi.json';
 
 // Language constants (for use in the application)
 export const LANGUAGES = {
   EN: 'en',
   ZH_CN: 'zh-CN',
   ZH_TW: 'zh-TW',
-  JA: 'ja'
+  JA: 'ja',
+  VI: 'vi'
 };
 
 // Country to language mapping for specific regions
@@ -95,6 +97,9 @@ i18n
       },
       [LANGUAGES.JA]: {
         translation: jaTranslation
+      },
+      [LANGUAGES.VI]: {
+        translation: viTranslation
       }
     },
     fallbackLng: LANGUAGES.EN,
