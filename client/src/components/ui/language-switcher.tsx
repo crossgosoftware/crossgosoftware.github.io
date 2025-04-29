@@ -38,6 +38,9 @@ const LanguageSwitcher = () => {
           <SelectItem value={LANGUAGES.JA}>
             {t('common.language', { lng: LANGUAGES.JA })}
           </SelectItem>
+          <SelectItem value={LANGUAGES.VI}>
+            {t('common.language', { lng: LANGUAGES.VI })}
+          </SelectItem>
         </SelectContent>
       </Select>
     </div>
