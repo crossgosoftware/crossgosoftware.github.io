@@ -63,5 +63,184 @@
       "description": "Liên hệ với chúng tôi ngay hôm nay để thảo luận về cách chúng tôi có thể giúp doanh nghiệp của bạn phát triển với các giải pháp công nghệ của chúng tôi.",
       "button": "Liên Hệ Ngay"
     }
+  },
+  "about": {
+    "title": "Về Chúng Tôi",
+    "main_paragraph": "Chúng tôi là công ty phần mềm chuyên cung cấp các giải pháp công nghệ hiện đại giúp doanh nghiệp tối ưu hóa quy trình làm việc, nâng cao trải nghiệm người dùng và tận dụng sức mạnh của trí tuệ nhân tạo.",
+    "mission": "Tại CrossGo, chúng tôi tin rằng công nghệ phải phục vụ con người, không phải ngược lại. Sứ mệnh của chúng tôi là tạo ra phần mềm mạnh mẽ, trực quan giải quyết các vấn đề thực tế và tạo ra tác động có ý nghĩa.",
+    "experience": {
+      "years": "10+",
+      "text": "Năm Kinh Nghiệm"
+    },
+    "values": {
+      "innovation": {
+        "title": "Đổi Mới",
+        "description": "Chúng tôi không ngừng khám phá công nghệ và phương pháp mới"
+      },
+      "collaboration": {
+        "title": "Hợp Tác",
+        "description": "Chúng tôi làm việc chặt chẽ với khách hàng để hiểu nhu cầu của họ"
+      },
+      "excellence": {
+        "title": "Xuất Sắc",
+        "description": "Chúng tôi luôn hướng đến chất lượng trong mọi sản phẩm"
+      }
+    },
+    "mission_statement": {
+      "title": "Sứ Mệnh",
+      "description": "Cung cấp các giải pháp phần mềm sáng tạo và đáng tin cậy giúp doanh nghiệp đạt được mục tiêu của họ."
+    },
+    "vision": {
+      "title": "Tầm Nhìn",
+      "description": "Trở thành nhà cung cấp hàng đầu về giải pháp công nghệ tiên tiến thúc đẩy chuyển đổi doanh nghiệp."
+    },
+    "team": {
+      "title": "Đội Ngũ",
+      "description": "Gặp gỡ những cá nhân tài năng đứng sau thành công của chúng tôi."
+    }
+  },
+  "services": {
+    "title": "Dịch Vụ",
+    "description": "Giải pháp công nghệ toàn diện được điều chỉnh theo nhu cầu kinh doanh của bạn",
+    "custom_software": {
+      "title": "Phát Triển Web Full-Stack",
+      "description": "Chúng tôi cung cấp các ứng dụng web hiện đại với giao diện người dùng responsive, backend mạnh mẽ và cơ sở hạ tầng bảo mật. Từ bảng điều khiển đến nền tảng thương mại điện tử, chúng tôi xử lý toàn bộ stack web.",
+      "benefits": [
+        "Phát triển frontend và backend hoàn chỉnh",
+        "Kiến trúc bảo mật và có thể mở rộng",
+        "Tối ưu hóa hiệu suất và trải nghiệm người dùng",
+        "Mã nguồn dễ bảo trì và mở rộng"
+      ]
+    },
+    "cross_platform": {
+      "title": "Phát Triển Đa Nền Tảng",
+      "description": "Phát triển một lần, triển khai mọi nơi. Ứng dụng đa nền tảng của chúng tôi hoạt động mượt mà trên Windows, macOS, Linux, iOS và Android với giao diện và hiệu suất nhất quán.",
+      "benefits": [
+        "Codebase thống nhất cho nhiều nền tảng",
+        "Thời gian ra mắt sản phẩm nhanh hơn",
+        "Giao diện người dùng nhất quán trên các thiết bị",
+        "Chi phí bảo trì dài hạn thấp hơn"
+      ]
+    },
+    "ai_integration": {
+      "title": "Tích Hợp AI & LLM",
+      "description": "Chúng tôi tích hợp các tính năng AI như chatbot được đào tạo theo dữ liệu doanh nghiệp, LLM ngoại tuyến, thị giác máy tính để phát hiện lỗi và chuyển đổi giọng nói thành văn bản để tự động hóa.",
+      "benefits": [
+        "Chatbot tùy chỉnh cho các nền tảng (FB, TikTok, Shopee, Line, v.v.)",
+        "LLM chạy cục bộ với dữ liệu riêng của bạn",
+        "Hệ thống thị giác AI để phát hiện lỗi thời gian thực",
+        "Chuyển đổi âm thanh thành văn bản cho tự động hóa và khả năng truy cập"
+      ]
+    },
+    "object_tracking": {
+      "title": "AR & Theo Dõi Đối Tượng",
+      "description": "Chúng tôi xây dựng trải nghiệm AR nâng cao và giải pháp theo dõi 2D cho tất cả các thiết bị có camera, bao gồm cả thiết bị đeo như Meta Quest và Apple Vision Pro.",
+      "benefits": [
+        "Giải pháp AR đa thiết bị sử dụng theo dõi 2D",
+        "Hỗ trợ Android, iOS, Meta Quest và Apple Vision Pro",
+        "Tương tác nâng cao cho marketing, đào tạo và giáo dục",
+        "Tích hợp liền mạch với hệ thống hiện có"
+      ]
+    }
+  },
+  "portfolio": {
+    "title": "Dự Án",
+    "description": "Khám phá một số dự án và câu chuyện thành công gần đây của chúng tôi",
+    "view_project": "Xem Dự Án",
+    "view_all": "Xem Tất Cả Dự Án",
+    "projects": {
+      "fashion": {
+        "title": "Nền Tảng Bán Lẻ Thời Trang",
+        "description": "Trải nghiệm mua sắm đa nền tảng với đề xuất và tìm kiếm hình ảnh được hỗ trợ bởi AI."
+      },
+      "surveillance": {
+        "title": "Hệ Thống Giám Sát Thông Minh",
+        "description": "Giải pháp an ninh thông minh với theo dõi đối tượng và phân tích hành vi thời gian thực."
+      },
+      "medical": {
+        "title": "Trợ Lý Chẩn Đoán Y Tế",
+        "description": "Công cụ hỗ trợ AI giúp các chuyên gia y tế phân tích hình ảnh y tế và chẩn đoán bệnh."
+      }
+    },
+    "tags": {
+      "cross_platform": "Ứng Dụng Đa Nền Tảng",
+      "ecommerce": "Thương Mại Điện Tử",
+      "object_tracking": "Theo Dõi Đối Tượng",
+      "security": "An Ninh",
+      "ai": "Tích Hợp AI",
+      "healthcare": "Y Tế"
+    }
+  },
+  "contact": {
+    "title": "Liên Hệ",
+    "description": "Sẵn sàng biến ý tưởng thành giải pháp công nghệ? Liên hệ để thảo luận về dự án hoặc tìm hiểu thêm về dịch vụ của chúng tôi.",
+    "getInTouch": "Liên Hệ Ngay",
+    "address": {
+      "title": "Địa Chỉ",
+      "value": "CT3 Ori Garden Building, Liên Chiểu, Đà Nẵng, Việt Nam"
+    },
+    "email": {
+      "title": "Email",
+      "value": "crossgosoftwaresolution@gmail.com"
+    },
+    "phone": {
+      "title": "Điện Thoại",
+      "value": "(+84) 0899248136"
+    },
+    "form": {
+      "name": "Họ Tên",
+      "yourName": "Họ tên của bạn",
+      "email": "Email",
+      "yourEmail": "Email của bạn",
+      "phone": "Điện Thoại",
+      "yourPhone": "Số điện thoại của bạn (không bắt buộc)",
+      "company": "Công Ty",
+      "yourCompany": "Tên công ty của bạn (không bắt buộc)",
+      "subject": "Chủ Đề",
+      "selectSubject": "Chọn chủ đề",
+      "message": "Tin Nhắn",
+      "yourMessage": "Tin nhắn của bạn",
+      "sending": "Đang gửi...",
+      "sendMessage": "Gửi Tin Nhắn",
+      "submit": "Yêu Cầu Báo Giá",
+      "subjects": {
+        "generalInquiry": "Thông Tin Chung",
+        "customSoftware": "Phát Triển Phần Mềm Tùy Chỉnh",
+        "crossPlatform": "Phát Triển Đa Nền Tảng",
+        "aiIntegration": "Tích Hợp AI",
+        "objectTracking": "Theo Dõi Đối Tượng",
+        "other": "Khác"
+      }
+    },
+    "successMessage": {
+      "title": "Gửi Tin Nhắn Thành Công!",
+      "description": "Cảm ơn bạn đã liên hệ với CrossGo. Chúng tôi đã nhận được tin nhắn của bạn và sẽ phản hồi trong thời gian sớm nhất."
+    },
+    "toast": {
+      "success": {
+        "title": "Đã gửi tin nhắn!",
+        "description": "Cảm ơn bạn đã gửi tin nhắn. Chúng tôi sẽ phản hồi sớm."
+      },
+      "error": {
+        "title": "Lỗi",
+        "description": "Không thể gửi tin nhắn của bạn. Vui lòng thử lại sau.",
+        "unexpectedError": "Đã xảy ra lỗi không mong muốn. Vui lòng thử lại sau."
+      }
+    },
+    "info": {
+      "title": "Thông Tin Liên Hệ",
+      "address": "Địa Chỉ",
+      "phone": "Điện Thoại",
+      "email": "Email"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 CrossGo. Đã đăng ký bản quyền.",
+    "social": {
+      "follow": "Theo Dõi Chúng Tôi"
+    },
+    "links": {
+      "title": "Liên Kết Nhanh"
+    }
   }
 }
