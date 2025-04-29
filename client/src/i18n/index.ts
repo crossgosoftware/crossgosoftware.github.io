@@ -25,7 +25,8 @@ export const COUNTRY_TO_LANGUAGE: Record<string, string> = {
   'HK': LANGUAGES.ZH_TW, // Hong Kong -> Traditional Chinese
   'TW': LANGUAGES.ZH_TW, // Taiwan -> Traditional Chinese
   'MO': LANGUAGES.ZH_TW, // Macau -> Traditional Chinese
-  'SG': LANGUAGES.ZH_CN  // Singapore -> Simplified Chinese
+  'SG': LANGUAGES.ZH_CN, // Singapore -> Simplified Chinese
+  'VN': LANGUAGES.VI     // Vietnam -> Vietnamese
 };
 
 // Enhanced language detector that prioritizes geolocation
@@ -35,6 +36,11 @@ const enhancedLanguageDetector = {
     try {
       // Try to get the timezone to estimate user's location
       const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+      
+      // Vietnamese timezone detection
+      if (timezone.includes('Ho_Chi_Minh') || timezone.includes('Hanoi')) {
+        return LANGUAGES.VI;
+      }
       
       // Japanese timezone detection
       if (timezone.includes('Tokyo') || timezone.includes('Japan') || 
@@ -66,6 +72,11 @@ const enhancedLanguageDetector = {
       // For Japanese
       if (langOnly === 'ja') {
         return LANGUAGES.JA;
+      }
+
+      // For Vietnamese
+      if (langOnly === 'vi') {
+        return LANGUAGES.VI;
       }
       
       // No specific match found
